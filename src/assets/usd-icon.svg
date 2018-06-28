@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="20px" viewBox="0 0 36 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>usd-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page---Purchase-Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Purchase-Page---Wallet-Transfer-1" transform="translate(-179.000000, -639.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(179.000000, 606.000000)">
+                <g id="Group-4">
+                    <g id="usd-icon" transform="translate(0.000000, 33.000000)">
+                        <rect id="Rectangle-path" fill="#A5D6A7" x="0" y="0" width="35.1" height="20"></rect>
+                        <path d="M0,20 L36,20 L36,0 L0,0 L0,20 Z M34.2,1.81818182 L34.2,18.1818182 L1.8,18.1818182 L1.8,1.81818182 L34.2,1.81818182 Z" id="Shape" fill="#388E3C"></path>
+                        <ellipse id="Oval" fill="#388E3C" cx="7.2" cy="10" rx="1.8" ry="1.81818182"></ellipse>
+                        <ellipse id="Oval" fill="#388E3C" cx="28.8" cy="10" rx="1.8" ry="1.81818182"></ellipse>
+                        <ellipse id="Oval" fill="#388E3C" cx="18" cy="10" rx="6.3" ry="6.36363636"></ellipse>
+                        <path d="M31.3011,0.909090909 C30.87,1.39272727 30.6,2.02545455 30.6,2.72727273 C30.6,4.23363636 31.8087,5.45454545 33.3,5.45454545 C33.9948,5.45454545 34.6212,5.18181818 35.1,4.74636364 L35.1,0.909090909 L31.3011,0.909090909 Z" id="Shape" fill="#388E3C"></path>
+                        <path d="M4.6989,0.909090909 L0.9,0.909090909 L0.9,4.74636364 C1.3788,5.18181818 2.0052,5.45454545 2.7,5.45454545 C4.1913,5.45454545 5.4,4.23363636 5.4,2.72727273 C5.4,2.02545455 5.13,1.39272727 4.6989,0.909090909 Z" id="Shape" fill="#388E3C"></path>
+                        <path d="M4.6989,19.0909091 C5.13,18.6072727 5.4,17.9745455 5.4,17.2727273 C5.4,15.7663636 4.1913,14.5454545 2.7,14.5454545 C2.0052,14.5454545 1.3788,14.8181818 0.9,15.2536364 L0.9,19.0909091 L4.6989,19.0909091 Z" id="Shape" fill="#388E3C"></path>
+                        <path d="M35.1,19.0909091 L35.1,15.2536364 C34.6212,14.8181818 33.9948,14.5454545 33.3,14.5454545 C31.8087,14.5454545 30.6,15.7663636 30.6,17.2727273 C30.6,17.9745455 30.87,18.6072727 31.3011,19.0909091 L35.1,19.0909091 Z" id="Shape" fill="#388E3C"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

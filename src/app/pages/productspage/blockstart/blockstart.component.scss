@@ -1,0 +1,67 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container-4 {
+  background-color: $white;
+  color: $primary-dark;
+  padding-top: 0;
+  padding-bottom: 14rem;
+  .container {
+    @include flex();
+    align-items: center;
+    .block-text {
+      font-family: $font-light;
+      .link {
+        color: #61AAFF;
+        font-family: $font-bold;
+      }
+      a {
+        text-decoration: none;
+        font-family: $font-bold;
+        color: #61AAFF;
+        &visited {
+          font-family: $font-bold;
+          color: #61AAFF;
+          text-decoration: none;
+        }
+      }
+    }
+    .body-block-img {
+      display: initial;
+      position: relative;
+      z-index: 999;
+      top: 300px;
+      right: 200px;
+      .dashboard-img {
+        width: 130%;
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .container-4 {
+    padding: 4rem 0;
+    .container {
+      .block-text {
+        @include flex-amount(2);
+      }
+      .body-block-img {
+        top: 0;
+        right: 0;
+        .dashboard-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .container-4 {
+    padding: 4rem 0;
+    .container {
+      @include flex-direction(column);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<div class="payment-options-wrapper">
+  <h3>Select a payment option:</h3>
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <div class="tab-wrapper"
+         [class.active]="isSelected(optionTabs.XEM)"
+         (click)="setTab(optionTabs.XEM)">
+      <div class="tabs">XEM</div>
+      <img src="../../../../../../assets/xem-logo.svg" alt="">
+    </div>
+    <div class="tab-wrapper disabled"
+         [class.active]="isSelected(optionTabs.BTC)">
+      <div class="tabs">BTC<br />(Coming Soon)</div>
+      <img src="../../../../../../assets/bitcoin-logo.svg" alt="">
+    </div>
+    <div class="tab-wrapper disabled"
+         [class.active]="isSelected(optionTabs.LTC)">
+      <div class="tabs">LTC<br />(Coming Soon)</div>
+      <img src="../../../../../../assets/litecoin-logo.svg" alt="">
+    </div>
+    <div class="tab-wrapper disabled"
+         [class.active]="isSelected(optionTabs.ETH)">
+      <div class="tabs">ETH<br />(Coming Soon)</div>
+      <img src="../../../../../../assets/ethereum-logo.svg" alt="">
+    </div>
+  </div>
+</div>

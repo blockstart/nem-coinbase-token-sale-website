@@ -1,0 +1,84 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.vip-verification-card {
+  background: #232142; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #232142 0%, #1e5799 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #232142 0%,#1e5799 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #232142 0%,#1e5799 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232142', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.modal-dialog.modal-dialog-centered {
+  min-width: 310px;
+}
+.modal-close {
+  padding: 1rem;
+  button {
+    span {
+      color: $white;
+    }
+  }
+}
+.flex-item {
+  @include flex();
+  @include justify-content(center);
+}
+
+.title {
+  color: $white;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.alert.alert-danger {
+  text-align: center;
+  font-family: $font-bold;
+  font-size: $font-20;
+}
+
+.wrong-password {
+  margin: auto;
+  display: block;
+}
+
+input[type=text] {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #3f4087;
+  color: $white;
+  text-align: center;
+  font-size: $font-20;
+  padding: .2rem;
+  width: 400px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $white;
+  opacity: .5; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $white;
+  opacity: .5;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $white;
+  opacity: .5;
+}
+
+.btn-wrapper {
+  padding-top: 4rem;
+  .password-btn {
+    padding: .8rem 5rem;
+    background-color: $btn-primary-light;
+  }
+}
+
+@media (max-width: 599px) {
+  .title {
+    font-size: $font-24;
+  }
+}

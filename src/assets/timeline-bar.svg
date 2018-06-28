@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="595px" height="25px" viewBox="0 0 595 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>timeline-bar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#80F3E4" offset="0%"></stop>
+            <stop stop-color="#4A54E2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#5C8AE3" offset="0%"></stop>
+            <stop stop-color="#5A83E2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#70C2E4" offset="0%"></stop>
+            <stop stop-color="#6DBBE3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#7FEFE3" offset="0%"></stop>
+            <stop stop-color="#80F0E4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-Page---Token-Sale" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cache-Homepage" transform="translate(-141.000000, -4273.000000)">
+            <g id="Token-Distribution" transform="translate(0.000000, 3906.000000)">
+                <g id="Group-12" transform="translate(141.000000, 324.000000)">
+                    <g id="timeline-bar" transform="translate(0.000000, 43.000000)">
+                        <rect id="Rectangle-7" fill="url(#linearGradient-1)" x="1" y="7" width="580" height="12" rx="6"></rect>
+                        <circle id="Oval" fill="#4D5EE2" cx="12.5" cy="12.5" r="12.5"></circle>
+                        <circle id="Oval" fill="url(#linearGradient-2)" cx="186.5" cy="12.5" r="12.5"></circle>
+                        <circle id="Oval" fill="url(#linearGradient-3)" cx="389.166667" cy="12.5" r="12.5"></circle>
+                        <circle id="Oval" fill="url(#linearGradient-4)" cx="582.5" cy="12.5" r="12.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

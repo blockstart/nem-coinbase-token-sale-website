@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="95px" viewBox="0 0 95 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>crypto-mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="74.0066964%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#80F3E4" offset="0%"></stop>
+            <stop stop-color="#4A54E2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-Page--Products" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Products" transform="translate(-143.000000, -2761.000000)">
+            <g id="Group-7" transform="translate(140.000000, 1908.000000)">
+                <g id="Group-6" transform="translate(3.000000, 133.000000)">
+                    <g id="CryptoMail" transform="translate(0.000000, 720.000000)">
+                        <g id="crypto-mail">
+                            <circle id="Oval" fill="#34317E" cx="47.5" cy="47.5" r="47.5"></circle>
+                            <g id="icons8-message_filled" transform="translate(30.000000, 35.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                                <path d="M0,0 L0,1.93142361 C2.1082033,3.75162778 14.2023441,14.2116972 15.159375,15.0390625 C16.14375,15.8908424 17.1253908,15.9722222 17.5,15.9722222 C17.8746092,15.9722222 18.85625,15.8908424 19.840625,15.0390625 C20.8332033,14.1818576 33.6328125,3.11143681 35,1.93142361 L35,0 L0,0 Z M0,3.77604167 L0,21.2022569 L10.5875,12.9123264 C7.1558592,9.95008681 2.2613283,5.72916667 0,3.77604167 Z M35,3.77604167 C32.8644533,5.62065972 27.8933592,9.90668403 24.4125,12.9123264 L35,21.1805556 L35,3.77604167 Z M11.659375,13.8454861 L0,22.9600694 L0,25 L35,25 L35,22.9383681 L23.340625,13.8454861 C21.984375,15.0173611 21.0082033,15.8664278 20.759375,16.0807292 C19.4167967,17.239041 18.0304691,17.3611111 17.5,17.3611111 C16.9695316,17.3611111 15.5832033,17.2417535 14.240625,16.0807292 C13.9945316,15.869141 13.0183592,15.0200736 11.659375,13.8454861 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

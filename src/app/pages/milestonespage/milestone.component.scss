@@ -1,0 +1,25 @@
+@import "~sass/mixins";
+
+.box-wrapper {
+  padding: 6rem 0;
+}
+
+.btn-wrapper {
+  padding-top: 2rem;
+}
+
+button.free {
+  background-color: #62ADFA;
+  padding: .8rem 5rem;
+}
+
+button.tenMM {
+  background-color: #69D2AA;
+  padding: .8rem 3rem;
+}
+
+@media (max-width: 599px) {
+  .container {
+    @include flex-direction(column);
+  }
+}

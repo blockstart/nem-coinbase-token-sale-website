@@ -1,0 +1,86 @@
+<div class="container container-4">
+  <app-purchase-details-summary [cacheAmount]="cacheAmount"
+                                [recipientAddress]="recipientAddress">
+  </app-purchase-details-summary>
+    <div [ngSwitch]="state">
+      <div class="options-wrapper"
+           *ngSwitchCase="purchaseState.filingKYC">
+        <app-payment-options [cacheAmount]="cacheAmount"
+                             [recipientAddress]="recipientAddress"
+                             (complianceSent)="onComplianceSent($event)"
+                             [productId]="productId">
+        </app-payment-options>
+      </div>
+      <div class="container-4"
+           *ngSwitchCase="purchaseState.buyingWithCoinbase">
+        <app-coinbase [cacheAmount]="cacheAmount"
+                      [recipientAddress]="recipientAddress"
+                      [productId]="productId"
+                      (cancelClicked)="cancelForm()">
+        </app-coinbase>
+      </div>
+      <app-payment-option-info [infoHeader]="paymentInfo?.header"
+                               [infoBody1]="paymentInfo?.body1"
+                               [infoBody2]="paymentInfo?.body2"
+                               [btnText]="paymentInfo?.btnText"
+                               *ngSwitchCase="purchaseState.buyingWithWallet">
+        <div class="wallet-payment-options-wrapper container-4">
+          <app-wallet-payment-options></app-wallet-payment-options>
+        </div>
+        <div class="btn-continue-wrapper">
+          <button class="btn-main"
+                  (click)="onStartPayment()"
+                  data-toggle="modal"
+                  data-target="#startPaymentModal">
+            {{paymentInfo?.btnText}}
+          </button>
+          <button class="btn-main danger"
+                  (click)="cancelForm()">
+            Cancel
+          </button>
+        </div>
+      </app-payment-option-info>
+    </div>
+  <!--</ng-template>-->
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="startPaymentModal" tabindex="-1" role="dialog" aria-labelledby="startPaymentModalTitle"
+     aria-hidden="true" data-focus="false">
+  <div class="modal-dialog modal-dialog-centered" role="document" [hidden]="!showingTransferInfo">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="timer-wrapper">
+        <h5 class="time-duration" id="startPaymentModalTitle">{{remainingMin | number: '2.0-0'}}:{{remainingSec |
+          number: '2.0-0'}}</h5>
+        <h5 class="remaining">Remaining</h5>
+      </div>
+      <div class="modal-body">
+        <app-popup-payment-fields [title]="paymentFields?.s1Title"
+                                  [stepIcon]="paymentFields?.s1icon"
+                                  [address]="paymentFields?.address"
+                                  [copyAddress]="copyAddress"></app-popup-payment-fields>
+        <div class="bar-wrapper">
+          <div class="bar"></div>
+        </div>
+        <app-popup-payment-fields [title]="paymentFields?.s2Title"
+                                  [stepIcon]="paymentFields?.s2icon"
+                                  type="( XEM )"
+                                  [copyAmount]="copyAmount"></app-popup-payment-fields>
+        <div class="bar-wrapper">
+          <div class="bar"></div>
+        </div>
+        <app-popup-payment-fields [title]="paymentFields?.s3Title" [stepIcon]="paymentFields?.s3icon"
+                                  [message]="paymentFields?.message"
+                                  [copyMessage]="copyMessage"></app-popup-payment-fields>
+      </div>
+      <div class="modal-footer">
+        <div>Once this is complete you will see Cache in your wallet. This may take up to 10 minutes</div>
+      </div>
+    </div>
+  </div>
+</div>

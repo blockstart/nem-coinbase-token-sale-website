@@ -1,0 +1,205 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container-4 {
+  background-color: $main-bg;
+  color: $white;
+  .container {
+    @include flex();
+    @include align-items(center);
+    .block-text {
+      .body-block-text {
+        font-family: $font-light;
+        strong {
+          font-family: $font-bold;
+        }
+      }
+      h1.header-block-text {
+        padding-bottom: .75rem;
+      }
+      .timeline-sale {
+        color: $white;
+      }
+      .timeline-wrapper {
+        padding-top: 3rem;
+        .timeline-sales, .timeline-dates {
+          padding: 1.2rem 0;
+          @include flex();
+          @include justify-content(space-between);
+          .sales-titles {
+            font-weight: bold;
+            font-family: $font-bold;
+            font-size: $font-18;
+          }
+          .vip {color: #4E62DF};
+          .private {color: #68ACE3};
+          .public {color: #76D5E3};
+          .ends {color: #7FEFE3};
+        }
+        .timeline-icon {
+          width: 100%;
+        }
+        .timeline-dates {
+          font-weight: bold;
+          font-size: $font-14;
+        }
+      }
+      .block-text-2 {
+        padding-top: 5rem;
+        h1.header-block-text {
+          font-weight: 300;
+          padding-bottom: .75rem;
+          padding-top: 1rem;
+        }
+        .seal {
+          height: 75px;
+        }
+      }
+      h2 {
+        font-size: $font-18;
+      }
+    }
+    .body-block-img {
+      position: relative;
+     .pie-info {
+       position: absolute;
+       .percent {
+         font-weight: bold;
+         font-family: $font-bold;
+         font-size: $font-18;
+       }
+       .description {
+         font-size: $font-14;
+         font-weight: normal;
+       }
+     }
+      .pie-info.founding {
+        right: 120px;
+        top: -70px;
+        .percent {
+          color: #4D5EE2;
+        }
+      }
+      .pie-info.reserve {
+        right: 25%;
+        .percent {
+          color: #6EBEE3;
+        }
+      }
+      .pie-info.incubator {
+        right: 3%;
+        bottom: 20%;
+        .percent {
+          color: #F1F3FA;
+        }
+      }
+      .pie-info.product {
+        right: 65%;
+        bottom: -20%;
+        text-align: right;
+        .percent {
+          font-size: $font-30;
+          color: #69D2A9;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container-4 {
+    .container {
+      .body-block-img {
+        .pie-info.founding {
+          right: 80px;
+          top: -70px;
+        }
+        .pie-info.reserve {
+          right: 20%;
+        }
+        .pie-info.incubator {
+          right: -5%;
+          bottom: 20%;
+        }
+        .pie-info.product {
+          right: 65%;
+          bottom: -20%;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-4 {
+    .container {
+      .body-block-img {
+        .pie-info.founding {
+          right: 10px;
+          top: -70px;
+        }
+        .pie-info.reserve {
+          right: 10%;
+        }
+        .pie-info.incubator {
+          right: -25%;
+          bottom: 20%;
+        }
+        .pie-info.product {
+          right: 80%;
+          bottom: -20%;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container-4 {
+    padding-top: 2rem;
+    .container {
+      @include flex-direction(column);
+      .block-text, .block-text-2 {
+        order: 2;
+        padding-top: 2rem;
+        text-align: center;
+        h1 {
+          font-size: $font-32;
+        }
+        h2 {
+          font-size: $font-18;
+        }
+      }
+      .body-block-img {
+        @include flex-direction(column);
+        @include flex-order(1);
+        img {
+          display: none;
+        }
+        .pie-info.founding,
+        .pie-info.reserve,
+        .pie-info.incubator,
+        .pie-info.product {
+          position: initial;
+          @include flex();
+          padding: 0 1rem;
+          text-align: left;
+          .percent {
+            padding-bottom: 1rem;
+            padding-right: .5rem;
+            font-size: $font-24;
+          }
+        }
+        .pie-info.reserve {
+        }
+        .pie-info.incubator {
+        }
+        .pie-info.product {
+        }
+      }
+    }
+  }
+}
+

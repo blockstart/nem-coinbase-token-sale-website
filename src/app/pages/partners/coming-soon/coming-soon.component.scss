@@ -1,0 +1,9 @@
+@import "~sass/styles";
+
+p {
+  font-weight: bold;
+  font-size: $font-16;
+  span {
+    color: $primary-light;
+  }
+}

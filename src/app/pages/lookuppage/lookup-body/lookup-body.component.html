@@ -1,0 +1,58 @@
+<div class="container-4">
+  <div class="container">
+    <div class="tx-container">
+      <form>
+        <div class="wallet-address">
+          <h1>Enter your Cache Wallet Address To Find Transactions</h1>
+          <div class="input-wrapper">
+            <input [(ngModel)]="address"
+                   type="text"
+                   placeholder="Cache Wallet Address"
+                   [ngModelOptions]="{standalone: true}">
+          </div>
+        </div>
+        <div class="find-btn-wrapper">
+          <button class="btn-main"
+                  (click)="findClicked()"
+                  [disabled]="!address">
+            Find Transactions
+          </button>
+          <p>*The following information is non-sensitive and is available on blockchain explorers</p>
+        </div>
+      </form>
+    </div>
+    <div>
+    </div>
+    <br><br><br>
+    <div class="transactions" *ngIf="allTransactions">
+      <div class="charges" *ngFor="let charges of allTransactions; let idx = index">
+        <button class="accordion" (click)="activeAccordions[idx] = !activeAccordions[idx]">{{transactionTypes[idx]}}
+          Transactions
+        </button>
+        <div class="panel" [ngStyle]="{'display': activeAccordions[idx] ? 'block' : 'none'}">
+          <div *ngFor="let charge of charges">
+            <hr>
+            <div class="transaction-data-wrapper">
+              <div><b>Transaction Code:</b> {{charge.code}}</div>
+              <div><b>Date:</b> {{charge.created_at | date: 'MM/dd/yyyy'}}</div>
+              <div><b>Purchase:</b> {{charge.description}}</div>
+              <div><b>Product Cost {{charge.pricing.local.currency}}:</b> {{charge.pricing.local.amount}}</div>
+              <div *ngFor="let payment of charge.payments">
+                <div><b>Paid:</b> {{payment.value.crypto.amount}} <b>{{payment.value.crypto.currency}}</b></div>
+                <div><b>{{payment.value.local.currency}} Value:</b> {{payment.value.local.amount}}</div>
+              </div>
+            </div>
+            <hr>
+            <h5>Transaction Events</h5>
+            <div class="events">
+              <div *ngFor="let event of charge.timeline">
+                <p><b>Status:</b> {{event.status}}<br>
+                  <b>Date:</b> {{event.time | date: 'short'}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

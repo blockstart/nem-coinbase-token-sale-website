@@ -1,0 +1,52 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container-4 {
+  .bar-wrapper {
+    width: 50%;
+    margin: auto;
+    @include flex();
+    @include flex-direction(column);
+    padding-bottom: 2rem;
+    .hello {
+      @include flex-amount(1);
+    }
+    span {
+      color: $white;
+      font-weight: bold;
+      font-size: $font-16;
+      text-align: center;
+      padding-top: 15px;
+    }
+  }
+  .btn-wrapper {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  background-color: $main-bg;
+  padding-bottom: 0;
+  .container {
+    .proud-wrapper {
+      @include flex();
+      @include justify-content(center);
+      padding: 5rem 0 2rem;
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .container-4 {
+    .bar-wrapper {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .container-4 {
+    .bar-wrapper {
+      display: block;
+      text-align: center;
+    }
+  }
+}

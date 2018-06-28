@@ -1,0 +1,70 @@
+@import "~sass/styles";
+
+.right-box {
+  @include flex();
+  @include flex-direction(row-reverse);
+  .box-text-wrapper {
+    padding: .5rem 2rem;
+    @include flex-basis(50%);
+    text-align: right;
+    .box-revenue {
+      font-size: $font-40;
+      font-weight: bolder;
+    }
+    .box-title {
+      font-size: $font-28;
+      font-weight: bolder;
+      padding-bottom: 1rem;
+    }
+    .box-info {
+      font-size: $font-18;
+    }
+  }
+  .box-img-wrapper {
+    @include flex();
+    @include align-items(center);
+    padding: 1rem;
+  }
+}
+
+.bar1 {border: 5px solid #62ADFA};
+.bar2 {border: 5px solid #63B2ED};
+.bar3 {border: 5px solid #64B8E0};
+.bar4 {border: 5px solid #5A94C5};
+.bar5 {border: 5px solid #66C4C6};
+.bar6 {border: 5px solid #68CBB7};
+.bar7 {border: 5px solid #69D2AA};
+
+.free {color: #62ADFA};
+.fivek {color: #63B2ED};
+.oneMM {color: #64B8E0};
+.twoMM {color: #5A94C5};
+.fiveMM {color: #66C4C6};
+.sevenMM {color: #68CBB7};
+.tenMM {color: #69D2AA};
+
+@media (max-width: 834px) {
+  .right-box {
+    .box-text-wrapper {
+      @include flex-basis(100%);
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .right-box {
+    @include flex-direction(column);
+    .bar1, .bar2, .bar3, .bar4, .bar5, .bar6, .bar7 {
+      @include flex-order(3);
+    }
+    .box-text-wrapper {
+      @include flex-order(3);
+      text-align: center;
+      padding: .5rem 1rem;
+    }
+    .box-img-wrapper {
+      order: 2;
+      margin: auto;
+    }
+  }
+}

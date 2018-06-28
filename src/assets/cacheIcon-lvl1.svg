@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>cacheIcon-lvl1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#ACE8EE" offset="0%"></stop>
+            <stop stop-color="#74CDD9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="39.1686893%" x2="13.5058443%" y2="55.376647%" id="linearGradient-2">
+            <stop stop-color="#ADE8EE" offset="0%"></stop>
+            <stop stop-color="#74CDD9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-Page---Token-Sale" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-281.000000, -711.000000)">
+            <g id="Header">
+                <g id="Group-22" transform="translate(197.000000, 669.000000)">
+                    <g id="Group-20">
+                        <g id="Group-19">
+                            <g id="Group-16" transform="translate(17.000000, 42.000000)">
+                                <g id="Group-17" transform="translate(67.000000, 0.000000)">
+                                    <g id="cacheIcon-lvl1">
+                                        <g id="cacheIcon">
+                                            <circle id="Oval" fill="#19173F" cx="40" cy="40" r="40"></circle>
+                                            <path d="M80,40 C80,17.90861 62.09139,0 40,0 C17.90861,0 0,17.90861 0,40 C0,62.09139 80,62.09139 80,40 Z" id="Oval" fill="#27254B"></path>
+                                            <g id="Group" transform="translate(14.921875, 14.687500)">
+                                                <path d="M13.125,38.1972426 C15.2736703,39.4144017 17.7561768,40.109934 20.3982203,40.109934 C24.5632096,40.109934 28.513765,38.3489561 31.2931736,35.3125 L40.546875,40.6612691 C26.0255917,41.563743 16.8849667,40.7424008 13.125,38.1972426 Z" id="Combined-Shape" fill="#3C7595"></path>
+                                                <path d="M18.046875,38.1972426 C20.1955453,39.4144017 22.6780518,40.109934 25.3200953,40.109934 C29.4850846,40.109934 33.43564,38.3489561 36.2150486,35.3125 L45.46875,40.6612691 C30.9474667,41.563743 21.8068417,40.7424008 18.046875,38.1972426 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                                                <path d="M25.3272889,0 C33.3080232,0 40.6869051,3.7053548 45.46875,10.0102356 L36.2183524,15.3743368 C33.4399361,12.3291789 29.4907913,10.563151 25.3272889,10.563151 C17.1816634,10.563151 10.553037,17.1981303 10.553037,25.3515625 C10.553037,30.8613633 13.7653561,35.3076034 18.0566654,38.2217998 C21.8152897,40.7742537 30.9526512,41.5979502 45.46875,40.6928894 C43.8297398,42.8539306 41.8856239,44.7095735 39.7167439,46.2152889 C35.5578733,49.1025283 30.5725717,50.703125 25.3272889,50.703125 C11.361005,50.703125 0,39.3312338 0,25.3515625 C0,11.3718933 11.361005,0 25.3272889,0 Z" id="Path" fill="#3C7595"></path>
+                                                <path d="M25.3272889,0 C33.3080232,0 40.6869051,3.69964547 45.46875,9.99481148 L36.2183524,15.3506475 C33.4399361,12.3101817 29.4907913,10.546875 25.3272889,10.546875 C6.79671873,9.99481148 1.06831,24.0279222 0,25.3125 C0,11.3543712 11.361005,0 25.3272889,0 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

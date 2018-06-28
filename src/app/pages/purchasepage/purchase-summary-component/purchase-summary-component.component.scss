@@ -1,0 +1,333 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+h1.first-time {
+  font-size: $font-30;
+  color: $white;
+  font-family: $font-bold;
+}
+
+a.walk-through {
+  color: $branded-blue;
+  font-size: $font-18;
+  font-family: $font-bold;
+  &:hover {
+    text-decoration: none;
+    @include filter-brightness(90%);
+  }
+}
+
+.summary-container {
+  background-color: #232242;
+  border-radius: 3px;
+  padding: 0 2rem 1rem;
+  margin-top: 50px;
+  .summary-info {
+    padding: 1rem;
+    form {
+      .wallet-address {
+        color: $white;
+        h1 {
+          color: $white;
+          font-weight: 100;
+          font-size: $font-28;
+          margin-bottom: 1rem;
+        }
+        .input-wrapper {
+          @include flex();
+          input {
+            width: 100%;
+            padding: 5px 10px;
+            line-height: 2rem;
+            font-size: $font-20;
+            border-radius: 4px;
+            border-style: none;
+          }
+        }
+        p {
+          padding-top: 1rem;
+          a {
+            color: $branded-blue;
+            text-decoration: none;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+}
+
+.buy-btn-wrapper {
+  padding: 2rem 0 0;
+  color: $white;
+  .xem-btn {
+    background-color: #69D2A9;
+    padding: 1rem 4rem;
+  }
+}
+
+.background-card {
+  @include flex();
+  @include align-items(center);
+  @include flex-direction(column);
+  @include justify-content(center);
+  padding: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  max-width: 90% !important;
+  border-radius: 3px;
+  background: #232142; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #232142 0%, #1e5799 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #232142 0%, #1e5799 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #232142 0%, #1e5799 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#232142', endColorstr='#1e5799', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+
+  .flex-item {
+    @include flex;
+  }
+
+  .title {
+    color: $white;
+    font-size: $font-24;
+    font-family: $font-bold;
+    padding-bottom: 2rem;
+  }
+
+  .subtitle {
+    color: $white;
+    font-size: $font-18;
+    font-family: $font-bold;
+  }
+
+  .crypto-amount {
+    color: #69D2A9;
+    font-size: $font-35;
+    font-family: $font-bold;
+  }
+
+  .address-caption {
+    font-size: $font-18;
+    font-family: $font-bold;
+    color: $white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .copy-txt {
+    font-size: 12px;
+    color: white;
+    font-style: italic;
+  }
+
+  .wallet-address {
+    font-size: $font-16;
+    font-family: $font-bold;
+    color: $branded-blue;
+    max-width: 80%;
+    word-break: break-all;
+  }
+
+  .copy-btn-wrapper {
+    color: $white;
+    cursor: pointer;
+    p {
+      font-size: $font-14;
+      padding-top: 1rem;
+    }
+    img {
+      height: 1.7rem;
+    }
+  }
+
+  .copy-btn {
+    background-color: $branded-blue;
+  }
+
+  .footer-text {
+    margin: 4rem 4rem 2rem 4rem;
+    font-family: $font-regular;
+    font-size: $font-16;
+    color: $white;
+  }
+
+  .copied-text {
+    margin-top: 0.5rem;
+    text-align: center;
+    position: relative;
+    font-family: $font-regular;
+    font-size: $font-14;
+    color: #69D2A9;
+    z-index: 10;
+    opacity: 0;
+    @include transition(opacity 250ms);
+    transition: opacity 250ms;
+  }
+  .active {
+    opacity: 1;
+    @include transition(opacity 250ms);
+  }
+
+  .hidden {
+    opacity: 0;
+    @include transition(opacity 250ms);
+  }
+
+  .confirm-message {
+    text-align: center;
+    font-family: $font-bold;
+    font-size: $font-24;
+    color: $white;
+    margin-bottom: 2rem;
+  }
+
+  .confirm-subtext {
+    font-family: $font-regular;
+    font-size: $font-16;
+    color: $white;
+    margin-bottom: 4rem;
+  }
+
+  .continue-btn {
+    background-color: $primary-light;
+    margin-bottom: 2rem;
+  }
+
+  .confirmation {
+    text-align: center;
+  }
+
+  .boxed-field {
+    padding: 0.5rem 2rem;
+    background-color: #282757;
+    border: 2px solid #615FC1;
+  }
+  .required-text {
+    color: #F34A4A;
+  }
+
+  .copy-box {
+    @include flex();
+    @include justify-content(center);
+    @include align-items(center);
+    position: relative;
+    left: 20px;
+  }
+
+  .copy-container {
+    min-width: 80%;
+    text-align: center;
+  }
+
+  .copy-button {
+    position: relative;
+    left: 20px;
+    color: $branded-blue;
+    height: 1.7rem;
+  }
+
+  .input-container {
+    @include flex();
+    @include flex-direction(row);
+    @include justify-content(center);
+  }
+
+  .timer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1112px) {
+  .summary-container {
+    form {
+      .buy-btn-wrapper {
+        @include flex();
+        @include flex-direction(column);
+        .btn-main {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  h1.first-time {
+    padding-top: 3rem;
+    font-size: $font-24;
+  }
+  .summary-container {
+    form {
+      .proud-wrapper {
+        @include flex();
+        @include justify-content(center);
+      }
+      .buy-btn-wrapper {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+
+  .background-card {
+    .title {
+      font-size: 1.3rem;
+      padding-bottom: 1rem;
+    }
+    .crypto-amount {
+      img {
+        display: none;
+      }
+    }
+    .input-container {
+      .boxed-field {
+        .wallet-address {
+          font-size: $font-16;
+        }
+      }
+    }
+    .copy-box {
+      @include flex-direction(column);
+      left: 0;
+      .copy-btn-wrapper {
+        img {
+          display: none;
+        }
+      }
+    }
+    .footer-text {
+      margin: 0;
+      padding: 1rem;
+    }
+  }
+  h1.first-time {
+    padding: 3rem 2rem 0;
+  }
+  .summary-container {
+    padding: 1rem 0;
+    .summary-info {
+      form {
+        .wallet-address, .purchase-summary {
+          h1 {
+            font-size: $font-16;
+            text-align: left;
+          }
+        }
+        .purchase-summary {
+          .summary-amount {
+            text-align: left;
+          }
+        }
+        .proud-wrapper {
+          @include flex();
+          @include justify-content(center);
+        }
+        .buy-btn-wrapper {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

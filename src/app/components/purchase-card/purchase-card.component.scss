@@ -1,0 +1,147 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.flex-container {
+  @include flex();
+  @include flex-wrap(wrap);
+  @include justify-content(space-around);
+}
+
+.card-wrapper {
+  @include flex();
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0 0 5px rgba(61, 59, 128, .7);
+  border-radius: 5px;
+  padding: 2rem 1rem 1rem;
+  margin: 0 .5rem;
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.cache-token-icon {
+  height: 80px;
+}
+
+.token-amount-wrapper {
+  padding: 2rem 0;
+  color: $primary;
+}
+
+.amount {
+  font-size: $font-35;
+  font-weight: bold;
+  font-family: $font-bold;
+  padding-bottom: 1rem;
+}
+
+.token {
+  font-size: $font-18;
+  font-weight: 600;
+  margin: 0;
+}
+
+.buy-btn-wrapper {
+  display: block;
+}
+
+.buy-btn {
+  background-color: $btn-primary;
+  padding: .8rem 0;
+  color: $white;
+  font-size: $font-16;
+  font-weight: bold;
+  font-family: $font-bold;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+  &:hover {
+    cursor: pointer;
+    @include filter-brightness(80%);
+  }
+}
+
+.vip-verification-card {
+  @include flex;
+  @include align-items(center);
+  @include flex-direction(column);
+  @include justify-content(center);
+  height: 20em;
+  width: 40em;
+  border-radius: 3px;
+  background: #232142; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #232142 0%, #1e5799 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #232142 0%, #1e5799 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #232142 0%, #1e5799 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#232142', endColorstr='#1e5799', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+.flex-item {
+  @include flex;
+}
+
+.title {
+  color: $white;
+  font-size: $font-30;
+  padding-bottom: 2rem;
+}
+
+input[type=password] {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #3f4087;
+  color: $white;
+  text-align: center;
+  font-size: $font-20;
+  padding: .2rem;
+  width: 400px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $white;
+  opacity: .5; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $white;
+  opacity: .5;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $white;
+  opacity: .5;
+}
+
+.btn-wrapper {
+  padding-top: 4rem;
+  .password-btn {
+    padding: .8rem 5rem;
+    background-color: $btn-primary-light;
+  }
+}
+
+@media (max-width: 599px) {
+  .card-info {
+    @include flex();
+    @include flex-direction(row);
+    @include align-items(center);
+    @include justify-content(space-around);
+  }
+  .flex-container {
+    @include flex-direction(row);
+    .card-wrapper {
+      padding: 1rem;
+      margin: 1rem auto;
+      width: 80%;
+      .token-amount-wrapper {
+        .amount {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+

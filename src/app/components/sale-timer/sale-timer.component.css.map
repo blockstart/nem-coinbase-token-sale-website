@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW;EACT,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,MAAM;EACd,yBAAe;IACb,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,YAAY;IAC7B,kCAAS;MACP,UAAU,EAAE,MAAM",
+"sources": ["sale-timer.component.scss"],
+"names": [],
+"file": "sale-timer.component.css"
+}

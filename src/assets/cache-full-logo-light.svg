@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="157px" viewBox="0 0 512 157" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>cache-full-logo-light</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#ACE8EE" offset="0%"></stop>
+            <stop stop-color="#74CDD9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="39.1686893%" x2="13.5058443%" y2="55.376647%" id="linearGradient-2">
+            <stop stop-color="#ADE8EE" offset="0%"></stop>
+            <stop stop-color="#74CDD9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="cache-full-logo-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="cache" font-family="Nunito-Bold, Nunito" font-size="117.701149" font-weight="bold" fill="#FFFFFF">
+            <tspan x="167.266411" y="115.730524">cache</tspan>
+        </text>
+        <g id="cacheIcon-light" transform="translate(11.508557, 11.508557)">
+            <g id="cacheIcon">
+                <circle id="Oval" fill="#F5F7FF" cx="66.9588761" cy="66.9588761" r="66.9588761"></circle>
+                <path d="M133.917752,66.9588761 C133.917752,29.97851 103.939242,0 66.9588761,0 C29.97851,0 0,29.97851 0,66.9588761 C0,103.939242 133.917752,103.939242 133.917752,66.9588761 Z" id="Oval" fill="#FFFFFF"></path>
+                <g id="Group" transform="translate(24.978799, 24.586462)">
+                    <path d="M21.9708812,63.9411108 C25.5676949,65.978601 29.7233411,67.1429026 34.1460476,67.1429026 C41.1181228,67.1429026 47.7312414,64.195075 52.3838933,59.1121328 L67.8743295,68.0658221 C43.5661092,69.576538 28.2649598,68.2016343 21.9708812,63.9411108 Z" id="Combined-Shape" fill="#3C7595"></path>
+                    <path d="M30.2099617,63.9411108 C33.8067754,65.978601 37.9624215,67.1429026 42.385128,67.1429026 C49.3572033,67.1429026 55.9703219,64.195075 60.6229738,59.1121328 L76.11341,68.0658221 C51.8051897,69.576538 36.5040403,68.2016343 30.2099617,63.9411108 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                    <path d="M42.39717,0 C55.756695,0 68.1087359,6.20265982 76.11341,16.7568531 L60.6285043,25.7362078 C55.9775135,20.6386991 49.366756,17.6824181 42.39717,17.6824181 C28.7616219,17.6824181 17.6654875,28.7891869 17.6654875,42.4378033 C17.6654875,51.6610551 23.0428193,59.1039361 30.2263506,63.982219 C36.518182,68.2549551 51.8138685,69.6337999 76.11341,68.1187535 C73.369753,71.7362757 70.1153575,74.8425699 66.4847134,77.3630952 C59.5228808,82.1962527 51.1776261,84.8756066 42.39717,84.8756066 C19.0180032,84.8756066 0,65.8393802 0,42.4378033 C0,19.03623 19.0180032,0 42.39717,0 Z" id="Path" fill="#3C7595"></path>
+                    <path d="M42.39717,0 C55.756695,0 68.1087359,6.19310257 76.11341,16.7310336 L60.6285043,25.6965526 C55.9775135,20.6068983 49.366756,17.6551724 42.39717,17.6551724 C11.3775162,16.7310336 1.78832093,40.2220667 0,42.3724138 C0,19.0068983 19.0180032,0 42.39717,0 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

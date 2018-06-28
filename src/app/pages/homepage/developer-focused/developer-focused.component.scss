@@ -1,0 +1,59 @@
+@import "~sass/variables";
+@import "~sass/styles";
+@import "~sass/mixins";
+
+.container-4 {
+  .container {
+    @include flex();
+    @include align-items(center);
+    img {
+      padding: 0 1.2rem;
+    }
+  }
+  .block-text {
+    .body-block-text {
+      margin-bottom: 2rem;
+      font-family: $font-light;
+    }
+    .header-block-text {
+      font-family: $font-bold;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-4 {
+    .container {
+      img {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .container-4 {
+    .container {
+      @include flex-direction(column);
+      .block-text {
+        order: 2;
+        text-align: center;
+        h1 {
+          font-size: $font-32;
+        }
+        h2 {
+          font-size: $font-18;
+        }
+      }
+      .body-block-img {
+        text-align: center;
+        order: 1;
+        padding-bottom: 2rem;
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+

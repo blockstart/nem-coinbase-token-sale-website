@@ -1,0 +1,32 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container {
+  .screenshot-container {
+    padding-top: 2rem;
+    .screenshot-img-wrapper {
+      @include flex();
+      .img-wrapper {
+        @include flex-amount(1);
+        img {
+          width: 100%;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+
+hr.line {
+  margin-top: 3rem;
+  border: 2px solid #e8eaf5;
+}
+
+@media (max-width: 599px) {
+  h1 {
+    text-align: center;
+  }
+  .screenshot-img-wrapper {
+    @include flex-direction(column);
+  }
+}

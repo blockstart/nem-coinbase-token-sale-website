@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="95px" viewBox="0 0 95 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>digital-assets</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="77.8125%" y1="-8.04379112%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#80F3E4" offset="0%"></stop>
+            <stop stop-color="#4A54E2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-Page--Products" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Products" transform="translate(-740.000000, -2224.000000)">
+            <g id="Group-7" transform="translate(140.000000, 1908.000000)">
+                <g id="Group-6" transform="translate(3.000000, 133.000000)">
+                    <g id="Digital-Assets" transform="translate(597.000000, 183.000000)">
+                        <g id="digital-assets">
+                            <circle id="Oval" fill="#34317E" cx="47.5" cy="47.5" r="47.5"></circle>
+                            <g id="icons8-cardboard_box_filled" transform="translate(28.000000, 29.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                                <path d="M11.46875,0 C11.25,0 11.019531,0.085938 10.84375,0.21875 L0.65625,8 L15.625,8 L24.71875,0 L11.46875,0 Z M27.75,0 L18.65625,8 L30.59375,8 L38.625,0 L27.75,0 Z M40,1.46875 L32,9.40625 L32,37.34375 L39.78125,27.625 C39.921875,27.445313 40,27.226563 40,27 L40,1.46875 Z M0,10 L0,37 C0,37.554688 0.449219,38 1,38 L30,38 L30,10 L0,10 Z M11,14 L21,14 C21.554688,14 22,14.449219 22,15 C22,15.550781 21.554688,16 21,16 L11,16 C10.449219,16 10,15.550781 10,15 C10,14.449219 10.449219,14 11,14 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

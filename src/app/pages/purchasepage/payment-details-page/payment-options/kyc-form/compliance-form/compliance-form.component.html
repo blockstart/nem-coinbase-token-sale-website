@@ -1,0 +1,152 @@
+<form #form="ngForm" enctype="multipart/form-data">
+  <div class="form-row">
+    <div class="form-group col-md-10">
+      <label for="inputName">Full Name</label>
+      <input [(ngModel)]="inputName" type="text" class="form-control" id="inputName" name="inputName" required>
+    </div>
+    <div class="form-group col-md-10">
+      <label for="inputAddress1">Address</label>
+      <input [(ngModel)]="inputAddress1" type="text" class="form-control" id="inputAddress1" name="inputAddress1"
+             required>
+    </div>
+    <div class="form-group col-md-10">
+      <label for="inputAddress2">Address 2</label>
+      <input [(ngModel)]="inputAddress2" type="text" class="form-control" id="inputAddress2" name="inputAddress2">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputCity">City</label>
+      <input [(ngModel)]="inputCity" type="text" class="form-control" id="inputCity" name="inputCity" required>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State/Province</label>
+      <input [(ngModel)]="inputState" type="text" class="form-control" id="inputState" name="inputState" required>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input [(ngModel)]="inputZip" type="text" class="form-control" id="inputZip" name="inputZip" required>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputCountry">Country</label>
+      <select [(ngModel)]="selectCountry" (change)="disableChina($event)" id="inputCountry" name="inputCountry"
+              class="form-control" required>
+        <option selected value="">Choose...</option>
+        <option *ngFor="let country of countries" [ngValue]="country.code">{{country.name}}</option>
+      </select>
+    </div>
+    <span [class.invalid]="invalidCountry"
+          class="invalid-alert"
+          role="alert">
+      ⚠️ We are unable to process payments from China at this time. We apologize for the inconvenience.
+    </span>
+  </div>
+  <h5>Personal Identification (Both Required)</h5>
+  <div class="upload-wrapper">
+    <div class="upload-box">
+      <label class="upload-text" for="photoId">{{photoId?.name || 'Upload Photo ID'}}</label>
+      <input type="file"
+             accept=".png, .jpg, .tiff"
+             class="form-control-file"
+             id="photoId"
+             name="photoId"
+             (change)="getPhotoId($event)">
+      <div class="error-text">{{ photoIdError }}</div>
+    </div>
+    <div class="or">or</div>
+    <button class="btn-main" data-toggle="modal" data-target="#webcamModal"
+            (click)="onWebcamClicked(webcamTargets?.photoId)">
+      Take a picture with webcam
+    </button>
+  </div>
+  <div class="upload-wrapper">
+    <div class="upload-box">
+      <label class="upload-text extra-tall" for="photoWithId">
+        <span *ngIf="photoWithId">{{photoWithId?.name}}</span>
+        <span *ngIf="!photoWithId">Upload Photo<br/>With ID</span>
+      </label>
+      <input type="file"
+             accept=".png, .jpg, .tiff"
+             class="form-control-file"
+             id="photoWithId"
+             name="photoWithId"
+             ngModel
+             (change)="getPhotoWithId($event)">
+      <div class="error-text">{{ photoWithIdError }}</div>
+    </div>
+    <div class="or">or</div>
+    <button class="btn-main"
+            data-toggle="modal"
+            data-target="#webcamModal"
+            (click)="onWebcamClicked(webcamTargets.photoWithId)">
+      Take a picture with webcam
+    </button>
+  </div>
+  <h5>Proof of Residency (Required)</h5>
+  <div class="upload-wrapper">
+    <div class="upload-box">
+      <label class="upload-text-proof" for="proofOfRes">
+        <span *ngIf="!proofOfRes">Upload copy <br>of utility bill</span>
+        <span *ngIf="proofOfRes">{{proofOfRes?.name}}</span>
+      </label>
+      <input type="file"
+             accept=".png, .jpg, .tiff"
+             class="form-control-file"
+             id="proofOfRes"
+             name="proofOfRes"
+             ngModel
+             (change)="getPoR($event)">
+      <div class="error-text">{{ porError }}</div>
+    </div>
+    <div class="or">or</div>
+    <button class="btn-main"
+            data-toggle="modal"
+            data-target="#webcamModal"
+            (click)="onWebcamClicked(webcamTargets?.proofOfResidency)">
+      Take a picture with webcam
+    </button>
+  </div>
+  <div class="btn-continue-wrapper">
+    <button type="button"
+            [disabled]="!form.valid || !proofOfRes || !photoId || !photoWithId"
+            [ngClass]="{'disabled': !form.valid || !proofOfRes || !photoId || !photoWithId}"
+            class="btn-main"
+            (click)="submit()">
+      Continue to payment
+    </button>
+  </div>
+</form>
+
+<!-- Modal -->
+<div class="modal fade" id="webcamModal" tabindex="-1" role="dialog" aria-labelledby="webcamModalTitle"
+     aria-hidden="true" data-focus="false">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="video-player">
+          <video #video id="video" width="640" height="480" [hidden]="confirmingPhoto" autoplay>
+            Allow camera access to use this feature.
+          </video>
+          <canvas #canvas id="canvas" width="640" height="480" [hidden]="!confirmingPhoto"></canvas>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <div *ngIf="!confirmingPhoto">
+          <button type="button" class="btn-main" (click)="onCaptureClicked()">Take Photo</button>
+        </div>
+        <div *ngIf="confirmingPhoto">
+          <button type="button" class="btn-main" data-dismiss="modal" (click)="onAcceptPhotoClicked()">Accept</button>
+          <button type="button" class="btn-main cancel-btn" (click)="onRetakeClicked()">Retake</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Loading Modal -->
+<app-loading-screen *ngIf="submitting"></app-loading-screen>

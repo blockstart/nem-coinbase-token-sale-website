@@ -1,0 +1,58 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.header-wrapper {
+  text-align: center;
+  @include flex();
+  background-color: $main-bg;
+  color: $white;
+  .container {
+    header {
+      h1 {
+           font-family: $font-bold;
+           font-size: $font-50;
+           font-weight: bold;
+         }
+      h2 {
+        padding-top: 2rem;
+        font-size: $font-20;
+        line-height: 1.5;
+        padding-bottom: 2rem;
+        span {
+          font-weight: bold;
+          font-family: $font-bold;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .header-wrapper {
+    .container {
+      header {
+        padding: 0;
+        .header-block-text {
+          font-size: $font-40;
+          padding-bottom: 0;
+        }
+        .body-block-text {
+          font-size: $font-18;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .header-wrapper {
+    .container {
+      header {
+        padding: 0;
+        .header-block-text {
+          font-size: $font-32;
+        }
+      }
+    }
+  }
+}

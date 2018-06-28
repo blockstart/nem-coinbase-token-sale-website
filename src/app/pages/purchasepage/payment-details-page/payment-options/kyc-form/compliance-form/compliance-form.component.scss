@@ -1,0 +1,126 @@
+@import "~sass/styles";
+@import "~sass/mixins";
+
+form {
+  h5 {
+    font-size: $font-18;
+    font-family: $font-bold;
+    margin-top: 3rem;
+  }
+}
+.form-group {
+  margin-bottom: 1.5rem;
+  font-family: $font-regular;
+  label {
+    font-size: $font-14;
+  }
+  .form-control {
+    background-color: $grey-light;
+    padding: 0.5rem 0.75rem;
+    font-size: $font-16;
+  }
+}
+
+.invalid-alert {
+  color: #721c24;
+  padding: 0.75rem;
+  @include align-self(center);
+  @include transition(0.4s);
+  opacity: 0;
+}
+
+.invalid {
+  opacity: 1;
+}
+
+.upload-wrapper {
+  @include flex();
+  @include align-items(center);
+  .upload-box {
+    margin: 2rem 0;
+    padding: 0 1rem;
+    background-color: #e8eaf5;
+    border-radius: 3px;
+    text-align: center;
+    width: 175px;
+    height: 100px;
+    cursor: pointer;
+    @include transition(0.2s);
+    .upload-text {
+      color: #5B6687;
+      font-family: $font-bold;
+      position: relative;
+      top: 40px;
+      max-height: 1.2rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-break: break-all;
+      &.extra-tall {
+        top: 30px;
+        max-height: 2.4rem;
+      }
+    }
+    .upload-text-proof {
+      color: #5B6687;
+      font-family: $font-bold;
+      position: relative;
+      top: 30px;
+      max-height: 2.4rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-break: break-all;
+    }
+    .form-control-file {
+      padding: 2rem;
+      opacity: 0;
+    }
+    &:hover {
+      filter: brightness(85%);
+      cursor: pointer;
+    }
+    .error-text {
+      position: absolute;
+      color: $branded-red;
+      @include translateY(-1.0rem);
+    }
+  }
+  .or {
+    margin: 0 2rem;
+    font-family: $font-bold;
+  }
+  .btn-main {
+    background-color: $branded-blue;
+  }
+}
+
+.btn-continue-wrapper {
+  margin-top: 2rem;
+  .btn-main {
+    background-color: $btn-secondary;
+    &.disabled {
+      @include filter-brightness(70%);
+    }
+  }
+}
+
+.modal {
+  .modal-dialog {
+    min-width: 680px;
+  }
+  .modal-header {
+    padding: 1rem 1rem 0;
+    border-bottom: 0;
+  }
+  .modal-body {
+  }
+  .modal-footer {
+    text-align: center;
+    font-size: $font-14;
+    .btn-main {
+      background-color: #69D2A9;
+      &.cancel-btn {
+        background-color: $branded-red;
+      }
+    }
+  }
+}

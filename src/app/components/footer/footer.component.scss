@@ -1,0 +1,44 @@
+@import "~sass/variables";
+
+footer {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  .powered-text {
+    font-size: $font-20;
+    font-weight: 200;
+    flex: 1;
+    .brand-name {
+      font-weight: bold;
+      font-family: $font-bold;
+      color: $primary-light;
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        font-family: $font-bold;
+        color: $primary-light;
+        &visited {
+          text-decoration: none;
+          font-weight: bold;
+          font-family: $font-bold;
+          color: $primary-light;
+        }
+      }
+    }
+  }
+  .product-wrapper {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    .powered-text {
+      order: 2;
+    }
+    .product-wrapper {
+      order: 1;
+    }
+  }
+}

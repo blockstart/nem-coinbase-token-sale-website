@@ -1,0 +1,50 @@
+@import "~sass/styles";
+@import "~sass/mixins";
+
+.payment-options-wrapper {
+  h3 {
+    padding-bottom: 1rem;
+    font-size: $font-24;
+    font-family: $font-bold;
+  }
+  .btn-group {
+    @include flex();
+    @include align-items(center);
+    @include justify-content(space-between);
+    max-width: 500px;
+    .tab-wrapper {
+      @include flex();
+      @include flex-direction(column);
+      @include justify-content(center);
+      width: 150px;
+      height: 100px;
+      text-align: center;
+      cursor: pointer;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border-radius: 3px;
+      transition: 250ms;
+      &.disabled {
+        @include filter-brightness(70%);
+        cursor: not-allowed;
+      }
+      .tabs {
+        color: black;
+        padding-bottom: .5rem;
+        font-size: $font-18;
+      }
+    }
+    .active {
+      background-color: $grey-light;
+      font-family: $font-bold;
+    }
+  }
+}
+
+.options-container {
+  padding-top: 4rem;
+}

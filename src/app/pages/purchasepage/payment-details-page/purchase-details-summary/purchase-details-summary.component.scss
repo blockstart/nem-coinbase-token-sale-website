@@ -1,0 +1,10 @@
+@import "~sass/styles";
+
+.purchase-details-summary-wrapper {
+  font-size: $font-18;
+  line-height: 1.2;
+  .summary-text {
+    color: $branded-blue;
+    font-family: $font-bold;
+  }
+}

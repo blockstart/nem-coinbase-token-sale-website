@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>500k-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page---Token-Sale" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-518.000000, -4127.000000)">
+            <g id="Funding-Goals" transform="translate(-60.000000, 4010.000000)">
+                <g id="Group-39" transform="translate(276.000000, 117.000000)">
+                    <g id="500k---Wallet" transform="translate(257.000000, 0.000000)">
+                        <g id="500k-icon" transform="translate(45.000000, 0.000000)">
+                            <circle id="Oval-3-Copy" fill="#4D5EE2" cx="60" cy="60" r="60"></circle>
+                            <g id="icons8-wallet" transform="translate(39.000000, 36.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                <path d="M38.0384615,9.92307692 C38.0384615,9.92307692 9.32872596,9.92307692 4.380109,9.92307692 C2.92653204,9.92307692 1.63446473,9.63236219 1.63446473,8.26923077 L38.0384615,6.61538462 L38.0384615,3.30769231 C38.0384615,0.568509615 35.8161058,0 33.0769231,0 L3.33999358,4.96153846 C0.691256423,5.5494295 0,6.67352723 0,8.26923077 L0,38.0384615 C0,40.7776442 2.22235577,43 4.96153846,43 L38.0384615,43 C40.7776442,43 43,40.7776442 43,38.0384615 L43,14.8846154 C43,12.1454327 40.7776442,9.92307692 38.0384615,9.92307692 Z M36.5,30 C34.5654293,30 33,28.4345707 33,26.5 C33,24.5654293 34.5654293,23 36.5,23 C38.4345707,23 40,24.5654293 40,26.5 C40,28.4345707 38.4345707,30 36.5,30 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

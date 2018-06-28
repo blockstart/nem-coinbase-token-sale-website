@@ -1,0 +1,62 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.goal-wrapper {
+  @include flex();
+  @include justify-content(space-around);
+  position: relative;
+  @include translateY(-25%);
+  padding: 0 5rem;
+  .milestone {
+    text-align: center;
+    .goal-amount {
+      font-size: $font-18;
+      font-weight: bold;
+      font-family: $font-bold;
+      padding: 1rem 0;
+      color: $secondary;
+    }
+    .goal-tools {
+      font-size: $font-20;
+      font-weight: bold;
+      font-family: $font-bold;
+    }
+  }
+  #blockstart-goal {
+    position: relative;
+    bottom: 15px;
+    .goal-amount {
+      padding-top: .5rem;
+    }
+  }
+}
+
+.goal-line {
+  border: 5px solid $grey-light;
+  @include flex();
+  width: 70%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 599px) {
+  .goal-line {
+    display: none;
+  }
+  .goal-wrapper {
+    padding: 0;
+    @include transform(none);
+    @include flex-wrap(wrap);
+    .milestone {
+      flex-basis: 50%;
+      margin-bottom: 1.5rem;
+      img {
+        width: 50%;
+      }
+    }
+    #blockstart-goal {
+      bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "~sass/styles";
+@import "~sass/mixins";
+
+.modal-dialog {
+  max-width: 600px;
+  .modal-content {
+    padding: 1rem;
+  }
+}
+
+.options-wrapper {
+  padding-top: 4rem;
+}
+
+.btn-continue-wrapper {
+  margin-top: 2rem;
+  .btn-main {
+    background-color: $btn-secondary;
+  }
+  .danger {
+    background-color: #dc3545;
+  }
+}
+
+.modal {
+  .modal-header {
+    padding: 1rem 1rem 0;
+    border-bottom: 0;
+  }
+  .timer-wrapper {
+    text-align: center;
+    font-family: $font-bold;
+    .time-duration {
+      font-size: $font-30;
+    }
+    .remaining {
+      font-size: $font-16;
+    }
+  }
+  .modal-footer {
+    text-align: center;
+    font-size: $font-14;
+  }
+}
+
+.bar-wrapper {
+  display: flex;
+  height: 50px;
+  position: relative;
+  left: 22px;
+  .bar {
+    border: 1px solid $grey-light;
+    @include flex();
+    @include flex-direction(column);
+  }
+}
+
+

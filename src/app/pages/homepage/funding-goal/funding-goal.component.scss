@@ -1,0 +1,51 @@
+@import "~sass/variables";
+
+.container-4 {
+  .container {
+    h1 {
+      text-align: center;
+      font-size: $font-40;
+      font-family: $font-bold;
+    }
+    .body-block-text {
+      padding-bottom: 2rem;
+      text-align: center;
+      font-family: $font-light;
+    }
+    .spacer {
+      padding-top: 5rem;
+    }
+    .text-wrapper {
+      font-size: $font-18;
+      font-family: $font-light;
+      font-weight: lighter;
+      text-align: center;
+      padding: 0 2rem;
+    }
+    .btn-wrapper {
+      text-align: center;
+      button {
+        background-color: $secondary;
+        padding: .8rem 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .container-4 {
+    .container {
+      h1 {
+        font-size: $font-32;
+      }
+      h2 {
+        font-size: $font-18;
+      }
+      .spacer {
+        padding-top: 2rem;
+      }
+    }
+  }
+}
+
+

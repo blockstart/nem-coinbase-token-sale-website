@@ -1,0 +1,12 @@
+<app-payment-option-info [infoHeader]="paymentInfo?.header"
+                         [infoBody1]="paymentInfo?.body1"
+                         [infoBody2]="paymentInfo?.body2"
+                         [btnText]="paymentInfo?.btnText">
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck1">
+    <label class="custom-control-label" for="customCheck1">I understand and wish to proceed</label>
+  </div>
+  <div class="btn-continue-wrapper">
+    <button class="btn-main">{{paymentInfo?.btnText}}</button>
+  </div>
+</app-payment-option-info>

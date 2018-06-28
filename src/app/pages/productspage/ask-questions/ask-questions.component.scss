@@ -1,0 +1,87 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container-4 {
+  padding-top: 8rem;
+  padding-bottom: 0;
+  .container {
+    padding-bottom: 0;
+    @include flex();
+    .question-container {
+      @include flex-amount(1);
+      .question-box {
+        padding-bottom: 6rem;
+        .question-header {
+          @include flex();
+          .question-title {
+            font-size: $font-40;
+            font-weight: bold;
+            color: $white;
+            margin-left: 1.5rem;
+          }
+        }
+        .q-bullets {
+          line-height: 2;
+          color: $white;
+          li {
+            font-size: $font-24;
+          }
+        }
+      }
+    }
+    .form-container {
+      @include flex-amount(1);
+      position: relative;
+      top: 6rem;
+      .form-img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .container-4 {
+    padding-top: 4rem;
+    .container {
+      @include flex-direction(column);
+      .question-container {
+        @include flex-order(2);
+        padding-top: 2rem;
+        .question-box {
+          padding-bottom: 4rem;
+        }
+      }
+      .form-container {
+        text-align: center;
+        @include flex-order(1);
+        top: 0;
+        .form-img {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+    .container-4 {
+      .container {
+        .question-container {
+          .question-box {
+            .question-header {
+              .question-title {
+                font-size: $font-30;
+              }
+            }
+            .q-bullets {
+              line-height: 1.5;
+              li {
+                font-size: $font-18;
+              }
+            }
+          }
+        }
+      }
+    }
+}

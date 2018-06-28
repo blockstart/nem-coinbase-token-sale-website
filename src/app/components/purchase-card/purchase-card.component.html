@@ -1,0 +1,20 @@
+<div class="flex-container">
+  <div class="card-wrapper" *ngFor="let option of purchaseOptions">
+   <div class="card-info">
+     <img class="cache-token-icon" [src]="option?.iconUrl" alt="cache token">
+     <div class="token-amount-wrapper">
+       <div class="amount">{{ option?.numTokens | number: '1.0-0' }}</div>
+       <div class="token">Cache Tokens</div>
+     </div>
+     <div *ngIf="isDesktop()" class="buy-btn-wrapper">
+       <button class="buy-btn" (click)="purchase(option)">Buy (${{ option?.price | number: '1.0-0' }} USD)</button>
+     </div>
+   </div>
+    <div *ngIf="isPhone()" class="buy-btn-wrapper">
+      <button class="buy-btn" (click)="purchase(option)">Buy (${{ option?.price | number: '1.0-0' }} USD)</button>
+    </div>
+  </div>
+</div>
+<app-vip-lock [currentOption]="currentOption"
+              [(verifyVipStatus)]="verifyVipStatus">
+</app-vip-lock>

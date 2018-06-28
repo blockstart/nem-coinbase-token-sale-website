@@ -1,0 +1,5 @@
+<div class="icon-wrapper">
+  <span *ngFor="let option of optionImageUrls">
+    <img  [src]="option.url" alt="" *ngIf="option.enabled">
+  </span>
+</div>

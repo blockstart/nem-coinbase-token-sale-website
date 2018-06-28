@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="95px" viewBox="0 0 95 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>decentralized-id</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#80F3E4" offset="0%"></stop>
+            <stop stop-color="#4A54E2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-Page--Products" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Products" transform="translate(-143.000000, -2041.000000)">
+            <g id="Group-7" transform="translate(140.000000, 1908.000000)">
+                <g id="Group-6" transform="translate(3.000000, 133.000000)">
+                    <g id="Decentralized-ID">
+                        <g id="decentralized-id">
+                            <circle id="Oval" fill="#34317E" cx="47.5" cy="47.5" r="47.5"></circle>
+                            <g id="icons8-gender_neutral_user" transform="translate(33.000000, 31.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                                <path d="M14.5,0 C10.1489705,0 6.59090909,2.74819777 6.59090909,7.84615385 C6.59090909,11.2584135 8.19229436,14.7932692 10.5454545,16.7548077 L10.5454545,18.5528846 C10.5454545,19.3395439 10.0099432,20.0138228 9.35085227,20.1466346 C4.2120035,21.7148441 0,25.0913462 0,27.0528846 L0,29.4230769 C0,31.9056497 6.45703191,34 14.5,34 C22.5429694,34 29,31.9056497 29,29.4230769 L29,27.0528846 C29,25.2241593 24.921875,21.7148441 19.6491477,20.1466346 C18.9900568,20.0138228 18.4545455,19.2067308 18.4545455,18.5528846 L18.4545455,16.7548077 C20.8077056,14.7932692 22.4090909,11.2584135 22.4090909,7.84615385 C22.4090909,2.74819777 18.8510295,0 14.5,0 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<div class="left-box">
+  <div class="{{barColor}}"></div>
+  <div class="box-text-wrapper">
+    <div class="box-revenue {{fontColor}}">{{revenue}}</div>
+    <div class="box-title ">{{title}}</div>
+    <div class="box-info">{{description}}</div>
+    <ng-content></ng-content>
+  </div>
+  <div class="box-img-wrapper">
+    <img [src]="iconUrl" alt="">
+  </div>
+</div>

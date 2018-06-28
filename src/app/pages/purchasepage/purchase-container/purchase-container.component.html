@@ -1,0 +1,14 @@
+<div class="container-4 split-color-bottom">
+  <div class="container">
+    <div class="center-this">
+      <app-cache-purchase-component (product)="productUpdated($event)"
+                                    class="flex-item">
+      </app-cache-purchase-component>
+    </div>
+    <div class="center-this">
+      <app-purchase-summary-component [(product)]="product"
+                                      class="flex-item">
+      </app-purchase-summary-component>
+    </div>
+  </div>
+</div>

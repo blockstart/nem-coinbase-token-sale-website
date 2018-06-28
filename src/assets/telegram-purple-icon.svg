@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>telegram-purple-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page---Token-Sale" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-655.000000, -406.000000)" fill-rule="nonzero">
+            <g id="Header">
+                <g id="Sub-text" transform="translate(409.000000, 334.000000)">
+                    <g id="Group-24" transform="translate(198.000000, 68.000000)">
+                        <g id="telegram-purple-icon" transform="translate(48.266667, 4.810811)">
+                            <ellipse id="Oval" fill="#615FC1" cx="14.4" cy="14.5945946" rx="14.4" ry="14.5945946"></ellipse>
+                            <path d="M21.6,7.84332963 L18.816581,22.0613376 C18.816581,22.0613376 18.4271794,23.0475241 17.3566897,22.5741254 L10.9330224,17.5848388 L8.59734226,16.4410959 L4.6654074,15.1004075 C4.6654074,15.1004075 4.06161621,14.8837674 4.0032789,14.4103687 C3.94494159,13.93697 4.68436702,13.6809409 4.68436702,13.6809409 L20.3158499,7.46913314 C20.3151207,7.46840371 21.6,6.89653226 21.6,7.84332963 Z" id="Shape" fill="#19173F"></path>
+                            <path d="M10.5721395,21.8918919 C10.5721395,21.8918919 10.39191,21.8748834 10.1667985,21.1463534 C9.94238827,20.418532 8.8,16.5866626 8.8,16.5866626 L17.8794972,10.6854276 C17.8794972,10.6854276 18.4033548,10.3594317 18.3851215,10.6854276 C18.3851215,10.6854276 18.478392,10.7428312 18.1978792,11.0114235 C17.9173665,11.2800158 11.0651407,17.5830762 11.0651407,17.5830762" id="Shape" fill="#3D3B80"></path>
+                            <path d="M13.6,19.6435585 L10.849926,21.8102886 C10.849926,21.8102886 10.6352245,21.9510553 10.4,21.8628235 L10.9264924,17.8378378" id="Shape" fill="#3D3B80"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

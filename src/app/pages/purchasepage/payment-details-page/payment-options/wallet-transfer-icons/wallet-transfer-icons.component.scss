@@ -1,0 +1,11 @@
+@import "~sass/mixins";
+
+.icon-wrapper {
+  @include flex();
+  @include align-items(center);
+  @include justify-content(center);
+  img {
+    height: 20px;
+    padding: 0 .3rem;
+  }
+}

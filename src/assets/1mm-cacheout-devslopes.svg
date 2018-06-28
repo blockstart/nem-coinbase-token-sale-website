@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="287px" height="118px" viewBox="0 0 287 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>1mm-cacheout-devslopes</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="69.3959415%" y1="100%" x2="69.3959415%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#80F3E4" offset="0%"></stop>
+            <stop stop-color="#4A54E2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-10.8915827%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#80F3E4" offset="0%"></stop>
+            <stop stop-color="#4A54E2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="67.0628548%" y1="105.803189%" x2="67.0628548%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#80F3E4" offset="0%"></stop>
+            <stop stop-color="#4A54E2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-Page--Milestones" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Milestones" transform="translate(-786.000000, -1429.000000)">
+            <g id="1MM" transform="translate(140.000000, 1361.000000)">
+                <g id="1mm-cacheout-devslopes" transform="translate(649.000000, 71.000000)">
+                    <g id="devslopes-app-icon">
+                        <ellipse id="Oval" stroke="#5E5F65" stroke-width="3" fill="#292A32" cx="51.5" cy="51.9468547" rx="53" ry="53.4468547"></ellipse>
+                        <g id="Logorevamp" transform="translate(22.000000, 29.251627)" fill="#DB5252">
+                            <polygon id="Triangle-2" points="33.969697 0 59 41.3557484 8.93939394 41.3557484"></polygon>
+                            <polygon id="Rectangle-2-Copy" points="16.8578799 13.4855701 20.5606061 18.2234322 6.59797622 41.3557484 0 41.3557484"></polygon>
+                        </g>
+                        <path d="M90.0161432,17.4622834 C80.582327,6.74973905 66.8226259,0 51.5,0 C23.0573354,0 0,23.257399 0,51.9468547 C0,62.3601138 3.03765085,72.0577356 8.26790926,80.1873444 C17.4474782,94.4555313 98.093873,26.6349277 90.0161432,17.4622834 Z" id="Oval" fill-opacity="0.175752944" fill="#FFFFFF" opacity="0.362149004"></path>
+                    </g>
+                    <g id="icons8-chat" transform="translate(139.000000, 0.000000)">
+                        <path d="M74.7692308,95.8461538 L125.846154,95.8461538 L145,115 L145,44.7692308 C145,37.7174231 139.282577,32 132.230769,32 L74.7692308,32 C67.7174231,32 62,37.7174231 62,44.7692308 L62,83.0769231 C62,90.1287308 67.7174231,95.8461538 74.7692308,95.8461538" id="Shape" fill="#615FC1" fill-rule="nonzero"></path>
+                        <g id="icons8-source_code" transform="translate(83.000000, 49.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <g id="Group" transform="translate(0.000000, 5.000000)">
+                                <polygon id="Shape" points="32 20 29 17.5 35.8 10 29 2.5 32 0 41 10"></polygon>
+                                <polygon id="Shape" points="9 20 0 10 9 0 12 2.5 5.1 10 12 17.5"></polygon>
+                            </g>
+                            <polygon id="Shape" points="17 30 13.2 28.7 23 0 26.8 1.3"></polygon>
+                        </g>
+                        <path d="M73.2592593,63.8461538 L19.1111111,63.8461538 L0,83 L0,12.7692308 C0,5.71742308 5.70466667,0 12.7407407,0 L73.2592593,0 C80.2953333,0 86,5.71742308 86,12.7692308 L86,51.0769231 C86,58.1287308 80.2953333,63.8461538 73.2592593,63.8461538" id="Shape" fill="#61AAFF" fill-rule="nonzero"></path>
+                        <g id="cacheIcon" transform="translate(18.000000, 8.000000)">
+                            <circle id="Oval" fill="#F4F5FF" cx="24.5" cy="24.5" r="24.5"></circle>
+                            <path d="M49,24.497383 C49,10.9678519 38.0309764,0 24.5,0 C10.9690236,0 0,10.9678519 0,24.497383 C0,38.026914 49,38.026914 49,24.497383 Z" id="Oval" fill="#FFFFFF"></path>
+                            <g id="Group" transform="translate(9.139648, 8.996094)">
+                                <path d="M11.0537109,23.3958111 C12.3697715,24.141321 13.8903067,24.5673346 15.5085583,24.5673346 C18.0596143,24.5673346 20.4793295,23.4887356 22.1817172,21.6289062 L27.8496094,24.9050273 C18.9553233,25.4577926 13.3566905,24.9547205 11.0537109,23.3958111 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                                <path d="M15.5129645,0 C20.4011642,0 24.9207294,2.26952981 27.8496094,6.13126929 L22.1837408,9.41678127 C20.4819609,7.55162208 18.0631097,6.46993001 15.5129645,6.46993001 C10.5237689,6.46993001 6.46373519,10.5338548 6.46373519,15.527832 C6.46373519,18.902585 8.4312806,21.6259071 11.0597076,23.4108524 C13.3618649,24.9742304 18.9584989,25.4787445 27.8496094,24.9243948 C26.8457156,26.2480325 25.6549446,27.3846138 24.3265056,28.3068645 C21.7791974,30.0752986 18.7257002,31.0556641 15.5129645,31.0556641 C6.95861556,31.0556641 0,24.0903807 0,15.527832 C0,6.96528468 6.95861556,0 15.5129645,0 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                                <path d="M11.0537109,7.70049857 C12.3697715,8.44600854 13.8903067,8.8720221 15.5085583,8.8720221 C18.0596143,8.8720221 20.4793295,7.79342309 22.1817172,5.93359375 L27.8496094,9.20971484 C18.9553233,9.7624801 13.3566905,9.25940801 11.0537109,7.70049857 Z" id="Combined-Shape" fill="url(#linearGradient-3)" transform="translate(19.451660, 7.680176) scale(1, -1) translate(-19.451660, -7.680176) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

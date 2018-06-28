@@ -1,0 +1,25 @@
+@import "~sass/styles";
+
+.info-wrapper {
+  .info-header {
+    font-size: $font-24;
+    font-family: $font-regular;
+  }
+  .info {
+    padding-top: 1rem;
+    p {
+      font-size: $font-16;
+      font-family: $font-regular;
+      line-height: 1.2;
+    }
+  }
+  .custom-checkbox {
+    padding-top: 3rem;
+  }
+  .btn-continue-wrapper {
+    margin-top: 2rem;
+    .btn-main {
+      background-color: $btn-secondary;
+    }
+  }
+}

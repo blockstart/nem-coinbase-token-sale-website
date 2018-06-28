@@ -1,0 +1,28 @@
+<div class="container-4">
+  <div class="container">
+    <div class="block-text">
+      <h1 class="header-block-text">Blockstart Developer Tools</h1>
+    </div>
+    <div class="tool-container">
+      <div class="col-50">
+        <div *ngFor="let tool of devTools1" class="tool">
+          <img [src]="tool.iconUrl" alt="Blockstart developer tool icon">
+          <div class="info-wrapper">
+            <div class="tool-title">{{tool.title}}</div>
+            <div class="tool-description">{{tool.description}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-50">
+        <div *ngFor="let tool of devTools2" class="tool">
+          <img [src]="tool.iconUrl" alt="Blockstart developer tool icon">
+          <div class="info-wrapper">
+            <div class="tool-title">{{tool.title}}</div>
+            <div class="tool-description">{{tool.description}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,27 @@
+<div class="purchase-component-container">
+  <header>
+    <h1 class="header-title">Purchase Cache</h1>
+  </header>
+  <div class="purchase-container">
+    <div class="price-wrapper">
+      <div class="usd-price">${{selectedOption?.price | number: '1.0-0'}} <span>USD</span></div>
+      <select [(ngModel)]="selectedOption" name="purchaseOptions" id="purchaseOptions" class="dropdown-toggle"
+              (ngModelChange)="updateOption($event)">
+        <option *ngFor="let item of purchaseOptions" [ngValue]="item">{{item?.numTokens | number: '1.0-0'}} Cache
+          Tokens
+        </option>
+      </select>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img class="cache-icon" src="../../../../assets/cacheLogo-dark.svg" alt="">
+        <div class="tokens">
+          <div class="amount">{{selectedOption?.numTokens | number: '1.0-0'}}</div>
+          <div class="token-amount">Cache tokens</div>
+          <div class="usd-rate">(${{cacheCost | number: '1.3-3'}} USD / Cache)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,83 @@
+<app-header-component [headerTitle]="headerTitle"
+                      [headerSubTitle]="headerSubTitle"
+                      headerClass="split-color-bottom">
+</app-header-component>
+<div class="container-4">
+  <div class="container">
+    <div class="box-wrapper">
+      <app-left-info-box [revenue]="milestones?.free?.revenue"
+                         [title]="milestones?.free?.title"
+                         [description]="milestones?.free?.description"
+                         [iconUrl]="milestones?.free?.iconUrl"
+                         [barColor]="milestones?.free?.barColor"
+                         [fontColor]="milestones?.free?.fontColor">
+        <div class="btn-wrapper">
+          <a [href]="sdkLink" target="_blank">
+            <button class="btn-main free">Get the SDK</button>
+          </a>
+        </div>
+      </app-left-info-box>
+    </div>
+    <div class="box-wrapper">
+      <app-right-info-box [revenue]="milestones?.fiveK?.revenue"
+                          [title]="milestones?.fiveK?.title"
+                          [description]="milestones?.fiveK?.description"
+                          [iconUrl]="milestones?.fiveK?.iconUrl"
+                          [barColor]="milestones?.fiveK?.barColor"
+                          [fontColor]="milestones?.fiveK?.fontColor">
+      </app-right-info-box>
+    </div>
+    <div class="box-wrapper">
+      <app-left-info-box [revenue]="milestones?.oneMM?.revenue"
+                         [title]="milestones?.oneMM?.title"
+                         [description]="milestones?.oneMM?.description"
+                         [iconUrl]="milestones?.oneMM?.iconUrl"
+                         [barColor]="milestones?.oneMM?.barColor"
+                         [fontColor]="milestones?.oneMM?.fontColor">
+      </app-left-info-box>
+    </div>
+    <div class="box-wrapper">
+      <app-right-info-box [revenue]="milestones?.twoMM?.revenue"
+                          [title]="milestones?.twoMM?.title"
+                          [description]="milestones?.twoMM?.description"
+                          [iconUrl]="milestones?.twoMM?.iconUrl"
+                          [barColor]="milestones?.twoMM?.barColor"
+                          [fontColor]="milestones?.twoMM?.fontColor">
+      </app-right-info-box>
+    </div>
+    <div class="box-wrapper">
+      <app-left-info-box [revenue]="milestones?.fiveMM?.revenue"
+                         [title]="milestones?.fiveMM?.title"
+                         [description]="milestones?.fiveMM?.description"
+                         [iconUrl]="milestones?.fiveMM?.iconUrl"
+                         [barColor]="milestones?.fiveMM?.barColor"
+                         [fontColor]="milestones?.fiveMM?.fontColor">
+      </app-left-info-box>
+    </div>
+    <div class="box-wrapper">
+      <app-right-info-box [revenue]="milestones?.sevenMM?.revenue"
+                          [title]="milestones?.sevenMM?.title"
+                          [description]="milestones?.sevenMM?.description"
+                          [iconUrl]="milestones?.sevenMM?.iconUrl"
+                          [barColor]="milestones?.sevenMM?.barColor"
+                          [fontColor]="milestones?.sevenMM?.fontColor">
+      </app-right-info-box>
+    </div>
+    <div class="box-wrapper">
+      <app-left-info-box [revenue]="milestones?.tenMM?.revenue"
+                         [title]="milestones?.tenMM?.title"
+                         [description]="milestones?.tenMM?.description"
+                         [iconUrl]="milestones?.tenMM?.iconUrl"
+                         [barColor]="milestones?.tenMM?.barColor"
+                         [fontColor]="milestones?.tenMM?.fontColor">
+        <div class="btn-wrapper">
+          <a [href]="blockstartLink" target="_blank">
+            <button class="btn-main tenMM">More about Blockstart</button>
+          </a>
+        </div>
+      </app-left-info-box>
+    </div>
+
+  </div>
+</div>
+

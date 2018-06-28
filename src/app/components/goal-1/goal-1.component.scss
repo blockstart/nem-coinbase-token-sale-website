@@ -1,0 +1,86 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.goal-wrapper {
+  @include flex();
+  @include justify-content(space-around);
+  position: relative;
+  @include translateY(-20%);
+  .milestone {
+    text-align: center;
+    .goal-amount {
+      font-size: $font-18;
+      font-weight: bold;
+      font-family: $font-bold;
+      padding: 1rem 0;
+      color: $secondary;
+    }
+    .goal-tools {
+      font-size: $font-20;
+      font-family: $font-bold;
+      font-weight: bold;
+    }
+  }
+}
+
+.goal-line {
+  border: 5px solid $grey-light;
+  @include flex();
+  width: 80%;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+@media(min-width: 2800px) {
+  .goal-line {
+    width: 63%;
+  }
+}
+
+@media(min-width: 2351px) and (max-width: 2800px) {
+  .goal-line {
+    width: 65%;
+  }
+}
+
+@media(min-width: 2051px) and (max-width: 2350px) {
+  .goal-line {
+    width: 67%;
+  }
+}
+
+@media(min-width: 1801px) and (max-width: 2050px) {
+  .goal-line {
+    width: 73%;
+  }
+}
+
+@media(min-width: 1550px) and (max-width: 1800px) {
+  .goal-line {
+    width: 73%;
+  }
+}
+
+@media (min-width: 1420px) and (max-width: 1550px) {
+  .goal-line {
+    width: 76%;
+  }
+}
+
+@media (max-width: 599px) {
+  .goal-line {
+    display: none;
+  }
+  .goal-wrapper {
+    @include flex-wrap(wrap);
+    @include transform(none);
+    .milestone {
+      @include flex-basis(50%);
+      margin-bottom: 1.5rem;
+      img {
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container-4 {
+  @include flex();
+  @include align-items(center);
+  padding-bottom: 8rem;
+  .container {
+    @include flex();
+    .block-text {
+      @include flex-amount(1);
+      .body-block-text, .header-block-text {
+
+      }
+      .light {
+        font-weight: lighter;
+        font-family: $font-light;
+      }
+      .bold {
+        font-weight: bold;
+        padding-top: 2rem;
+        font-family: $font-bold;
+      }
+    }
+    .products-btn-wrapper {
+      padding-top: 2rem;
+      button {
+        background-color: $primary-light;
+        padding: 1rem 3rem;
+      }
+    }
+    .container-2 {
+      background-image: url(../../../../assets/network-image-for-xem.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+      @include flex-amount(1);
+      @include flex();
+      @include align-items(center);
+      .body-block-img {
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .container-4 {
+    .container {
+      .block-text {
+        @include flex-amount(2);
+      }
+      .container-2 {
+        .body-block-img {
+          img {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .container-4 {
+    .container {
+      @include flex-direction(column);
+      .block-text {
+        @include flex-amount(1);
+        @include flex-order(2);
+        line-height: 1.5;
+        text-align: center;
+        h1 {
+          font-size: $font-32;
+        }
+        h2 {
+          font-size: $font-18;
+        }
+      }
+      .container-2 {
+        .body-block-img {
+          order: 1;
+          img {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}

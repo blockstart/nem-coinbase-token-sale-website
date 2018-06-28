@@ -1,0 +1,73 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container-4 {
+  background-color: $main-bg;
+  color: $white;
+  padding: 8rem 0 10rem;
+  .container {
+    @include flex();
+    @include align-items(center);
+    .body-block-img {
+      @include flex-direction(column);
+      text-align: center;
+      img {
+        width: 100%;
+      }
+    }
+    .block-text {
+      padding-left: 3rem;
+      .header-block-text {
+        padding-bottom: 0;
+      }
+      ul {
+        line-height: 1.7;
+        li {
+          font-size: $font-24;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .container-4 {
+    padding: 4rem 0;
+    .container {
+      @include flex-direction(column);
+      .body-block-img {
+        img {
+          width: 60%;
+          margin: auto;
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .container-4 {
+    .container {
+      @include flex-direction(column);
+      .block-text {
+        ul {
+          padding-left: 0;
+          li {
+            font-size: $font-20;
+          }
+        }
+      }
+      .body-block-img {
+        img {
+          width: 60%;
+          margin: auto;
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+
+

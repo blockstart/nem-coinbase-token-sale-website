@@ -1,0 +1,17 @@
+<div class="container-4 split-color-bottom">
+  <div class="bar-wrapper">
+    <app-progress-bar [(milestone)]="milestoneAmount" class="hello"></app-progress-bar>
+    <span class="goal">{{milestoneAmount | milestone}} (USD)</span>
+  </div>
+  <div class="btn-wrapper">
+    <button class="btn-main" (click)="routeToMilestones()">View all our Milestones</button>
+  </div>
+  <div class="container">
+    <app-purchase-card></app-purchase-card>
+    <div class="proud-wrapper" >
+      <app-proudly-presents></app-proudly-presents>
+    </div>
+  </div>
+</div>
+
+

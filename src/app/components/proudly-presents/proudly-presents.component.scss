@@ -1,0 +1,40 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.disable-click {
+  pointer-events: none;
+}
+
+.accepts-crypto {
+  @include flex();
+  @include align-items(center);
+  .accepts-text {
+    font-size: $font-20;
+    font-weight: bold;
+    font-family: $font-bold;
+    color: $white;
+    padding-right: 1rem;
+  }
+  .crypto-payments {
+    cursor: pointer;
+    @include flex();
+    img {
+      padding: 0 .5rem;
+      @include transition(.3s ease);
+      &:hover {
+        @include transform(scale(1.2));
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .accepts-crypto {
+    display: block;
+    text-align: center;
+    .accepts-text {
+      padding-right: 0;
+      padding-bottom: 1rem;
+    }
+  }
+}

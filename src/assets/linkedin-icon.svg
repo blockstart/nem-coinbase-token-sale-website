@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icons8-linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page---Token-Sale" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-450.000000, -5556.000000)" fill="#00A2FF" fill-rule="nonzero">
+            <g id="Group-46" transform="translate(139.000000, 5346.000000)">
+                <g id="Group-2-Copy" transform="translate(242.000000, 0.000000)">
+                    <g id="Group-45" transform="translate(69.000000, 210.000000)">
+                        <g id="icons8-linkedin">
+                            <path d="M21.800781,0 L2.199219,0 C1,0 0,1 0,2.199219 L0,21.800781 C0,23 1,24 2.199219,24 L21.800781,24 C23,24 24,23 24,21.800781 L24,2.199219 C24,1 23,0 21.800781,0 Z M7,20 L3,20 L3,9 L7,9 L7,20 Z M5,7.699219 C3.800781,7.699219 3,6.898438 3,5.898438 C3,4.800781 3.800781,4 5,4 C6.199219,4 7,4.800781 7,5.800781 C7,6.898438 6.199219,7.699219 5,7.699219 Z M21,20 L17,20 L17,14 C17,12.398438 15.898438,12 15.601563,12 C15.300781,12 14,12.199219 14,14 C14,14.199219 14,20 14,20 L10,20 L10,9 L14,9 L14,10.601563 C14.601563,9.699219 15.601563,9 17.5,9 C19.398438,9 21,10.5 21,14 L21,20 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

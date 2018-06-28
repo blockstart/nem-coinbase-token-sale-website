@@ -1,0 +1,60 @@
+@import "~sass/styles";
+@import "~sass/mixins";
+
+label {
+  position: relative;
+  left: 4.3rem;
+}
+
+form {
+  @include flex();
+  .step-icon {
+    margin-right: 1.5rem;
+  }
+  .form-control {
+    background-color: $grey-light;
+    font-size: $font-16;
+    font-family: $font-bold;
+  }
+  .input-group-append {
+    .input-group-text {
+      background-color: $branded-blue;
+      padding: .8rem 1rem;
+      cursor: pointer;
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+  }
+}
+
+.copied-text {
+  margin-top: 0.5rem;
+  text-align: center;
+  position: relative;
+  font-family: $font-regular;
+  font-size: $font-14;
+  color: #69D2A9;
+  z-index: 10;
+  opacity: 0;
+  @include transition(opacity 250ms);
+}
+
+.active {
+  opacity: 1;
+  @include transition(opacity 250ms);
+}
+
+.hidden {
+  opacity: 0;
+  @include transition(opacity 250ms);
+}
+
+.message {
+  position: relative;
+  left: 4.3rem;
+  font-size: 14px;
+  color: #dc3545;
+  font-weight: bold;
+  padding-top: .5rem;
+}

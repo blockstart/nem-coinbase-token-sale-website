@@ -1,0 +1,70 @@
+<app-header-component [headerTitle]="headerTitle"
+                      [headerSubTitle]="headerSubTitle"
+                      headerClass="split-color-bottom">
+</app-header-component>
+<div class="container-4 container">
+  <div class="row-container">
+    <div class="half">
+      <app-partner-box [linkUrl]="partners?.time.linkUrl"
+                       [img]="partners?.time?.imgUrl"
+                       [description1]="partners?.time?.desc1">
+        <app-coming-soon when="Coming Soon"></app-coming-soon>
+      </app-partner-box>
+    </div>
+    <div class="half">
+      <app-partner-box [linkUrl]="partners?.devslopes?.linkUrl"
+                       [img]="partners?.devslopes?.imgUrl"
+                       [description1]="partners?.devslopes?.desc1">
+        <app-coming-soon when="Now"></app-coming-soon>
+      </app-partner-box>
+    </div>
+  </div>
+  <div class="row-container">
+    <div class="half">
+      <app-partner-box [linkUrl]="partners?.simple?.linkUrl"
+                       [img]="partners?.simple?.imgUrl"
+                       [description1]="partners?.simple?.desc1">
+        <app-coming-soon when="Coming Soon"></app-coming-soon>
+      </app-partner-box>
+    </div>
+    <div class="half">
+      <app-partner-box [linkUrl]="partners?.rupie?.linkUrl"
+                       [img]="partners?.rupie?.imgUrl"
+                       [description1]="partners?.rupie?.desc1">
+        <app-coming-soon when="Coming Soon"></app-coming-soon>
+      </app-partner-box>
+    </div>
+  </div>
+  <div class="row-container">
+    <div class="half">
+      <app-partner-box [linkUrl]="partners?.bento?.linkUrl"
+                       [img]="partners?.bento?.imgUrl"
+                       [description1]="partners?.bento?.desc1">
+        <app-coming-soon when="Coming Soon"></app-coming-soon>
+      </app-partner-box>
+    </div>
+    <div class="half">
+      <app-partner-box [linkUrl]="partners?.nem?.linkUrl"
+                       [img]="partners?.nem?.imgUrl"
+                       [description1]="partners?.nem?.desc1"
+                       [description2]="partners?.nem?.desc2">
+      </app-partner-box>
+    </div>
+  </div>
+  <div class="row-container">
+    <div class="half">
+      <app-partner-box [linkUrl]="partners?.bta?.linkUrl"
+                       [img]="partners?.bta?.imgUrl"
+                       [description1]="partners?.bta?.desc1"
+                       [description2]="partners?.bta.desc2">
+      </app-partner-box>
+    </div>
+    <div class="half">
+      <app-partner-box [linkUrl]="partners?.pVue?.linkUrl"
+                       [img]="partners?.pVue?.imgUrl"
+                       [description1]="partners?.pVue?.desc1"
+                       [description2]="partners?.pVue?.desc2">
+      </app-partner-box>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container-4 split-color-top">
+  <div class="container">
+    <header>
+      <h1>Team</h1>
+      <h2 class="body-block-text">
+        We have been building consumer and developer facing applications since 2015 and have taught over 275,000
+        students how to code. We make complex things simple. We are now doing this for blockchain.
+      </h2>
+    </header>
+    <div class="profile-wrapper">
+      <div class="profile-card" *ngFor="let person of team">
+        <img class="profile-img" [src]="person.imageURL" alt="Devslopes team profile picture">
+        <span>
+      <a *ngIf="person.linkIn !== null" [href]="person.linkIn" target="_blank">
+        <img src="../../../../assets/linkedin-icon.svg" alt="linkedIn icon">
+      </a>
+         <a *ngIf="person.twitter !== null" [href]="person.twitter" target="_blank">
+        <img src="../../../../assets/twitter-icon-blue.svg" alt="twitter icon">
+      </a>
+      </span>
+        <div class="name">{{person.name}}</div>
+        <div class="description" [innerHtml]="person.description"></div>
+      </div>
+    </div>
+  </div>
+</div>
+

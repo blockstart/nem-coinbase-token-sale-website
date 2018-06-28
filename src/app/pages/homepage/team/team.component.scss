@@ -1,0 +1,81 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container-4 {
+  background-color: $grey-lighter;
+  .container {
+    header {
+      padding-bottom: 3rem;
+      h1 {
+        font-size: $font-40;
+        font-weight: bold;
+        font-family: $font-bold;
+      }
+      h2 {
+        font-family: $font-light;
+      }
+    }
+    .profile-wrapper {
+      @include flex();
+      @include flex-wrap(wrap);
+      @include justify-content(space-evenly);
+      .profile-card {
+        @include flex();
+        @include flex-direction(column);
+        text-align: center;
+        margin-bottom: 1.5rem;
+        .profile-img {
+          background: 50% 50% no-repeat;
+          width: 200px;
+          border-radius: 5px;
+          padding-bottom: 1rem;
+        }
+        span {
+          @include flex();
+          @include flex-direction(row);
+          @include justify-content(center);
+          a {
+            padding: 0 .5rem .5rem;
+            @include transition(.3 ease);
+            img {
+              width: 100%;
+            }
+            &:hover {
+              @include transform(scale(1.1));
+            }
+          }
+        }
+        .name {
+          font-size: $font-18;
+          font-weight: bold;
+          padding-bottom: .5rem;
+        }
+        .description {
+          font-size: $font-16;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .container-4 {
+    .container {
+      header {
+        text-align: center;
+        h2 {
+          font-size: $font-18;
+        }
+      }
+      .profile-wrapper {
+        .profile-card {
+          margin-bottom: 1rem;
+          .profile-img {
+            width: 160px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>step1-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page---Purchase-Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Purchase-Page---Wallet-Transfer-2---Started" transform="translate(-429.000000, -480.000000)">
+            <g id="Payment-Modal" transform="translate(303.000000, 289.000000)">
+                <g id="Group-9" transform="translate(126.000000, 47.000000)">
+                    <g id="Purchase-Wallet-Flow" transform="translate(0.000000, 115.000000)">
+                        <g id="Group-7" transform="translate(0.000000, 29.000000)">
+                            <g id="step1-icon">
+                                <circle id="Oval-2" fill="#61AAFF" cx="22.5" cy="22.5" r="22.5"></circle>
+                                <path d="M19.26,29 L19.26,26.858 L21.744,26.858 L21.744,20.252 L19.602,20.252 L19.602,18.614 C20.2260031,18.4939994 20.7539978,18.3500008 21.186,18.182 C21.6180022,18.0139992 22.037998,17.8100012 22.446,17.57 L24.39,17.57 L24.39,26.858 L26.532,26.858 L26.532,29 L19.26,29 Z" id="1" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

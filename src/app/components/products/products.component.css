@@ -1,0 +1,7 @@
+.product-wrapper {
+  display: flex;
+  justify-content: center; }
+  .product-wrapper img {
+    padding: 0 .5rem; }
+
+/*# sourceMappingURL=products.component.css.map */

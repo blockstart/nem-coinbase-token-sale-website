@@ -1,0 +1,56 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container-timer {
+  background: #4a55e2; /* Old browsers */
+  background: -moz-linear-gradient(left, #4a55e2 0%, #207cca 1%, #2989d8 37%, #79dde3 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #4a55e2 0%,#207cca 1%,#2989d8 37%,#79dde3 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #4a55e2 0%,#207cca 1%,#2989d8 37%,#79dde3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a55e2', endColorstr='#79dde3',GradientType=1 ); /* IE6-9 */
+  padding: 1rem 0;
+  .timer-wrapper {
+    @include flex();
+    @include justify-content(center);
+    @include align-items(baseline);
+    color: $white;
+    margin: 0 auto;
+    .counter-title {
+      font-size: $font-20;
+      font-weight: bold;
+      font-family: $font-bold;
+      padding-right: 2rem;
+      position: relative;
+      bottom: 5px;
+    }
+    .counter {
+      font-size: $font-40;
+      font-family: $font-bold;
+      font-weight: bold;
+      padding-right: 1rem;
+    }
+    .duration {
+      font-size: $font-20;
+      font-weight: 600;
+      font-family: $font-light;
+      padding-right: 2rem;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .container-timer {
+    .timer-wrapper {
+      display: block;
+      text-align: center;
+      .counter-title {
+        display: block;
+      }
+      .counter {
+        padding-right: 0;
+      }
+      .duration {
+          padding-right: .5rem;
+        }
+    }
+  }
+}

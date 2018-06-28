@@ -1,0 +1,83 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+  .container {
+    display: flex;
+    .blockstart-text {
+      text-align: right;
+      @include flex-amount(1);
+      position: relative;
+      font-family: $font-light;
+      top: 100px;
+      .products-btn-wrapper {
+        padding-top: 2rem;
+      }
+
+      .link {
+        color: #61AAFF;
+        font-family: $font-bold;
+      }
+      a {
+        text-decoration: none;
+        font-family: $font-bold;
+        color: #61AAFF;
+        &visited {
+          font-family: $font-bold;
+          color: #61AAFF;
+          text-decoration: none;
+        }
+      }
+    }
+    .blockstart-img-wrapper {
+      @include flex-amount(1);
+      position: relative;
+      top: 150px;
+      z-index: 999;
+      .dashboard-img {
+        width: 130%;
+      }
+    }
+  }
+
+@media (max-width: 1024px) {
+  .container {
+    .blockstart-img-wrapper {
+      top: 100px;
+      .dashboard-img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .container {
+    padding: 4rem 0;
+    .blockstart-img-wrapper {
+      top: 0;
+    }
+    .blockstart-text {
+      top: 0;
+      @include align-self(center);
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .container {
+    padding: 4rem 0;
+    @include flex-direction(column);
+    .blockstart-img-wrapper {
+      @include flex-order(2);
+      text-align: center;
+      padding-top: 1rem;
+      .dashboard-img {
+        width: 70%;
+      }
+    }
+    .blockstart-text {
+      @include flex-order(1);
+      text-align: center;
+    }
+  }
+}

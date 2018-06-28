@@ -1,0 +1,25 @@
+<div class="container-4">
+  <div class="container">
+    <div class="tool-container">
+      <div class="col-50">
+        <div *ngFor="let blurb of blurb1" class="tool">
+          <img [src]="blurb.iconUrl" alt="Blockstart developer tool icon">
+          <div class="info-wrapper">
+            <div class="tool-title">{{blurb.title}}</div>
+            <div class="tool-description">{{blurb.description}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-50">
+        <div *ngFor="let blurb of blurb2" class="tool">
+          <img [src]="blurb.iconUrl" alt="Blockstart developer tool icon">
+          <div class="info-wrapper">
+            <div class="tool-title">{{blurb.title}}</div>
+            <div class="tool-description">{{blurb.description}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

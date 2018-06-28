@@ -1,0 +1,13 @@
+<div class="accepts-crypto {{accepts}}">
+  <div class="accepts-text ">Proudly Accepts:</div>
+  <span class="crypto-payments" (click)="proudlyAccepts()">
+        <img src="../../../assets/xem-logo-sm.svg" alt="">
+        <img src="../../../assets/bitcoin-logo.svg" alt="">
+        <img src="../../../assets/ethereum-logo.svg" alt="">
+        <img src="../../../assets/litecoin-logo.svg" alt="">
+      </span>
+</div>
+<app-vip-lock [currentOption]="currentOption"
+              [(verifyVipStatus)]="verifyVipStatus">
+</app-vip-lock>
+

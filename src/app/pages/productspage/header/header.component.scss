@@ -1,0 +1,36 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.header-wrapper {
+  text-align: center;
+  @include flex();
+  background-color: $main-bg;
+  color: $white;
+  padding: 4rem 1rem;
+  .container-4 {
+    .container {
+      header {
+        h1 {
+          font-size: $font-50;
+          font-weight: bold;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+        h2 {
+          padding-top: 2rem;
+          font-size: $font-20;
+          line-height: 1.5;
+          font-weight: 300;
+          span {
+            font-weight: bold;
+            font-family: $font-bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.body-block-text {
+  font-family: $font-light;
+}

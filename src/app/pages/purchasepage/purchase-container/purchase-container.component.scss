@@ -1,0 +1,25 @@
+@import "~sass/mixins";
+
+.container-4 {
+  padding-top: 4rem;
+  .container {
+    @include flex();
+    @include align-items(start);
+    .flex-item {
+      @include flex-amount(1);
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .container-4 {
+    .container {
+      @include flex();
+      @include flex-direction(column);
+      .center-this {
+        margin: auto;
+        text-align: center;
+      }
+    }
+  }
+}

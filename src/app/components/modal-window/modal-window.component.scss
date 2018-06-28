@@ -1,0 +1,26 @@
+@import "../../../styles.scss";
+@import "../../../sass/mixins.scss";
+
+.window {
+  position: fixed;
+  @include flex;
+  @include align-items(center);
+  @include justify-content(center);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10 !important;
+  background-color: rgba(20, 20, 20, .4);
+}
+
+.content {
+  @include flex;
+}
+
+@media (max-width: 599px) {
+  .window {
+    height: auto;
+  }
+}

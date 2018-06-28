@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="144px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>10MM-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#80F3E4" offset="0%"></stop>
+            <stop stop-color="#4A54E2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-Page---Token-Sale" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-925.000000, -4428.000000)">
+            <g id="Funding-Goals" transform="translate(-60.000000, 4010.000000)">
+                <g id="Group-38" transform="translate(0.000000, 418.000000)">
+                    <g id="10MM---Blockstart" transform="translate(952.000000, 0.000000)">
+                        <g id="10MM-icon" transform="translate(33.000000, 0.000000)">
+                            <circle id="Oval-3-Copy-5" fill="#E5E7F5" cx="72" cy="72" r="72"></circle>
+                            <circle id="Oval-3-Copy-5" fill="#282757" cx="72" cy="72" r="60"></circle>
+                            <g id="Group" transform="translate(28.000000, 28.000000)">
+                                <path d="M46.7870036,71.1223874 L67.7978339,58.9988396 L67.7978339,35.0393875 L46.7870036,47.1699961 L46.7870036,71.1223874 Z M42.8880866,70.9974024 L42.8880866,47.2151953 L22.0938628,35.2096445 L22.0938628,58.9988396 L42.8880866,70.9974024 Z M65.9875804,31.5824564 L50.6859206,22.7531811 L50.6859206,18.2178014 L71.6571639,30.3255544 L71.6571639,61.1919804 L44.9260549,76.6251934 L18.1949458,61.1919804 L18.1949458,30.3255544 L39.2057762,18.1949458 L39.2057762,22.7531811 L23.7566266,31.6675601 L44.7984015,43.8160345 L65.9875804,31.5824564 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                                <rect id="Rectangle-2" fill="#78DAE4" x="42.7797834" y="9.20577617" width="4.33212996" height="23.5018051"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

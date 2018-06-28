@@ -1,0 +1,47 @@
+@import "~sass/styles";
+
+.container {
+  header {
+    text-align: center;
+    color: $white;
+    padding: 0 8rem;
+    .header-block-text {
+      font-size: $font-50;
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .container {
+    header {
+      padding: 0;
+      .body-block-text {
+        font-size: $font-20;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    header {
+      .header-block-text {
+        font-size: $font-40;
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .container {
+    header {
+      .header-block-text {
+        font-size: $font-32;
+      }
+      .body-block-text {
+        font-size: $font-18;
+      }
+    }
+  }
+}
+

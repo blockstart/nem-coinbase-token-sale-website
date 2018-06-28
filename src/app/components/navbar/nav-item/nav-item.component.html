@@ -1,0 +1,13 @@
+<a *ngIf="!navItem.externalUrl" class="nav-items line before after {{ navItem?.classes }}"
+   [routerLink]="navItem.routePath"
+   routerLinkActive="active">
+    {{ navItem?.text }}
+  <ng-content></ng-content>
+</a>
+<a *ngIf="navItem.externalUrl"
+   class="nav-items {{ navItem?.classes }}"
+   [href]="navItem.externalUrl"
+   target="_blank" #externalLink>
+  {{ navItem?.text }}
+  <ng-content></ng-content>
+</a>

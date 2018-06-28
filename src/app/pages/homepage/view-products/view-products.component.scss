@@ -1,0 +1,47 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container-4 {
+  background-color: $main-bg;
+  color: $white;
+  .container {
+    @include flex();
+    @include align-items(center);
+    .block-text {
+      .products-btn-wrapper {
+        padding-top: 2rem;
+      }
+      .body-block-text {
+        font-family: $font-light;
+        strong {
+          font-family: $font-bold;
+        }
+      }
+    }
+    img {
+     width: 100%;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .container {
+    @include flex-direction(column);
+    .block-text {
+      text-align: center;
+      @include flex-order(2);
+      h1 {
+        font-size: $font-32;
+      }
+      h2 {
+        font-size: $font-18;
+      }
+    }
+    .body-block-img {
+      @include flex-order(1);
+      img {
+        width: 60%;
+      }
+    }
+  }
+}

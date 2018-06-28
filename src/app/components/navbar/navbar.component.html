@@ -1,0 +1,58 @@
+<div class="nav-wrapper" [class.expanded]="slideNavExpanded">
+  <nav class="navbar" [class.nav-scrolled]="pageScroll">
+    <div class="container">
+
+      <!--Toggle mobile menu button-->
+      <a class="hideOnDesktop navbar-toggler navbar-toggler-right"
+         aria-label="Open navigation"
+         [class.expanded]="slideNavExpanded"
+         (click)="toggleSlideNav()">
+        &#9776;
+      </a>
+
+      <!--Cache Logo to go home-->
+      <div class="logo-wrapper">
+        <a routerLink="/">
+          <img src="../../../assets/cacheLogo-full-light.svg" alt="cache logo">
+        </a>
+        <span class="powered-text">Powered by <span class="devslopes-link">
+        <a href="https://www.devslopes.com" target="_blank">&nbsp;Devslopes</a>
+      </span></span>
+      </div>
+      <div class="hideOnMobile navbar-nav mr-auto">
+        <div class="nav-links">
+          <app-nav-item *ngFor="let navItem of navItems" [navItem]="navItem"></app-nav-item>
+          <div class="dropdown">
+            <app-nav-item [navItem]="wpNavItem">
+              <div class="dropdown-content">
+                <a [href]="wpUrls?.english" target="_blank">English</a>
+                <a [href]="wpUrls?.japanese" target="_blank">Japanese (ホワイトペーパー)</a>
+                <a [href]="wpUrls?.russia" target="_blank">Russian (белая бумага)</a>
+                <a [href]="wpUrls?.indonesia" target="_blank">Indonesian (Kertas Putih)</a>
+                <a [href]="wpUrls?.turkey" target="_blank">Turkish (Teknik Rapor)</a>
+                <a [href]="wpUrls?.french" target="_blank">French (Français)</a>
+                <a [href]="wpUrls?.italian" target="_blank">Italian (Italiano)</a>
+                <a [href]="wpUrls?.filipino" target="_blank">Filipino (Tagalog)</a>
+              </div>
+            </app-nav-item>
+          </div>
+          <app-nav-item [navItem]="walletNavItem"></app-nav-item>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--Mobile Navbar-->
+  <div class="hideOnDesktop slidenav-container">
+    <a class="hideOnDesktop navbar-toggler close"
+       aria-label="Close navigation"
+       [class.expanded]="slideNavExpanded"
+       (click)="toggleSlideNav()">
+      &#215;
+    </a>
+    <div class="navbar-nav mobile-nav">
+      <app-nav-item *ngFor="let navItem of navItems" [navItem]="navItem" (click)="toggleSlideNav()"></app-nav-item>
+      <app-nav-item [navItem]="wpNavItem"></app-nav-item>
+    </div>
+  </div>
+</div>

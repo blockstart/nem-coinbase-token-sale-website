@@ -1,0 +1,45 @@
+@import "variables";
+
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url('/assets/fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('/assets/fonts/SourceSansPro-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url('/assets/fonts/SourceSansPro-Light.ttf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro SemiBold';
+  src: url('/assets/fonts/SourceSansPro-SemiBold.ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+:root {
+  font-size: 16px;
+}
+
+html, html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  font-size: 100%;
+}
+
+body {
+  font-family: $font-regular, sans-serif;
+  line-height: 1.2;
+  color: $primary-dark;
+}

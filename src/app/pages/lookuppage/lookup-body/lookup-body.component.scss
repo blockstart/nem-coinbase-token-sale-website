@@ -1,0 +1,106 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.tx-container {
+  background-color: #232242;
+  border-radius: 3px;
+  padding: 2rem;
+  position: relative;
+  top: 50px;
+  color: $white;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: $font-28;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper {
+  @include flex();
+}
+
+input {
+  width: 100%;
+  padding: 5px 10px;
+  line-height: 2rem;
+  font-size: $font-20;
+  border-radius: 4px;
+  border-style: none;
+}
+
+p {
+  padding: .5rem 0;
+  font-size: $font-16;
+}
+
+.find-btn-wrapper {
+  padding: 2rem 0 0;
+  color: $white;
+}
+
+.transactions {
+  padding-top: 1rem;
+}
+
+.transactions h5 {
+  padding-left: 35px;
+  font-size: $font-16;
+}
+
+.events {
+  color: #444;
+  cursor: pointer;
+  padding-left: 35px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  @include transition(0.4s);
+}
+
+.charges {
+  padding-bottom: 1.3rem;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  width: 100%;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  @include transition(0.4s);
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.transaction-data-wrapper {
+  line-height: 1.5;
+}
+
+@media (max-width: 834px) {
+  .tx-container {
+    text-align: center;
+  }
+  .btn-main {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 599px) {
+  h1 {
+    font-size: $font-24;
+  }
+}

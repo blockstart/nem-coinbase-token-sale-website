@@ -1,0 +1,18 @@
+@import "~sass/mixins";
+
+.product-wrapper {
+  display: flex;
+  justify-content: center;
+  @include justify-content(center);
+  @include align-items(center);
+  a {
+    @include transition(0.3s ease);
+    img {
+      padding: 0 .5rem;
+    }
+    &:hover {
+      @include transform(scale(1.1));
+      @include filter-brightness(110%);
+    }
+  }
+}

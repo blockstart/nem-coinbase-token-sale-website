@@ -1,0 +1,26 @@
+<div class="field-wrapper">
+  <label>{{title}} <span><b>{{type || address}}</b></span></label>
+  <form class="field-wrapper">
+    <img class="step-icon"
+         [src]="stepIcon"
+         alt="">
+    <div class="input-group">
+      <input type="text"
+             [value]="copyAddress || copyAmount || copyMessage"
+             class="form-control"
+             aria-label="Amount (to the nearest dollar)"
+             readonly>
+      <div class="input-group-append"
+           (click)="copy(copyAddress || copyAmount || copyMessage)">
+        <span class="input-group-text">
+          <img src="../../../../../assets/copy-button.svg" alt="">
+        </span>
+      </div>
+    </div>
+  </form>
+  <div class="message">{{message}}</div>
+</div>
+<div class="copied-text"
+     [ngClass]="{'active': addressCopied}">
+  Copied
+</div>

@@ -1,0 +1,65 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container-4 {
+  padding: 10rem 1rem 4rem;
+}
+.tool-container {
+  @include flex();
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  .col-50 {
+    width: 50%;
+    .tool {
+      @include flex();
+      padding: 3rem 1rem 3rem 0;
+      @include flex-amount(1);
+      img {
+        height: 100px;
+        position: relative;
+        bottom: 25px;
+      }
+      .info-wrapper {
+        margin-left: 2rem;
+        .tool-title {
+          font-size: $font-18;
+          font-weight: bold;
+          font-family: $font-bold;
+          padding-bottom: 1rem;
+        }
+        .tool-description {
+          font-size: $font-16;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tool-container {
+    .col-50 {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  h1 {
+    text-align: center;
+  }
+  .tool-container {
+    .col-50 {
+      width: 100%;
+      .tool {
+        padding: 3rem 1rem;
+        @include flex-direction(column);
+        text-align: center;
+        .info-wrapper {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+

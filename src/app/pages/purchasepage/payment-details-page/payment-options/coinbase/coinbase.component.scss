@@ -1,0 +1,18 @@
+@import "~sass/styles";
+
+.custom-checkbox {
+  padding-top: 3rem;
+}
+
+.btn-continue-wrapper {
+  margin-top: 2rem;
+  .btn-main {
+    background-color: $btn-secondary;
+  }
+  .danger {
+    background-color: #dc3545;
+  }
+  .fetching {
+    background-color: $grey-light;
+  }
+}

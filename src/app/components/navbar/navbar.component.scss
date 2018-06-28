@@ -1,0 +1,221 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container {
+  display: flex;
+}
+
+.nav-wrapper.expanded > .slidenav-container {
+  @include transform(translateX(-100%));
+}
+
+.navbar {
+  @include transition(box-shadow .5s ease-in-out background-color .5s ease-in-out);
+  border-radius: 0;
+  @include box-shadow(0 2px 0 0 transparent);
+  background-color: $main-bg;
+  color: $white;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  @include flex-direction(initial);
+  align-items: center;
+  color: white;
+}
+
+.navbar-toggler {
+  color: $white;
+  &:active {
+    color: $white;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.logo-wrapper {
+  @include flex-amount(1);
+  @include flex();
+  align-items: center;
+  @include flex-wrap(wrap);
+  a {
+    text-decoration: none;
+    @include transition(.3s ease);
+    img {
+      height: 30px;
+      margin-right: 1.25em;
+    }
+    &:hover {
+      @include transform(scale(1.05));
+    }
+  }
+  .powered-text {
+    font-size: $font-14;
+  }
+  .devslopes-link {
+    color: $primary-light;
+    font-size: $font-14;
+    font-weight: bold;
+    font-family: $font-bold;
+    a {
+      text-decoration: none;
+      color: $primary-light;
+      font-family: $font-bold;
+      @include transition(.1s ease);
+      &:visited {
+        text-decoration: none;
+        color: $primary-light;
+        font-family: $font-bold;
+      }
+      &:hover {
+        @include filter-brightness(110%);
+      }
+    }
+  }
+}
+
+.mr-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: $primary-dark;
+  min-width: 250px;
+  @include box-shadow(0 0 16px rgba(0,0,0,0.2));
+  z-index: 999;
+  @include transition(.3s);
+}
+
+.dropdown-content a {
+  color: $white;
+  font-size: $font-16;
+  font-weight: bold;
+  font-family: $font-bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  @include transition(0.1s color ease);
+}
+
+.dropdown-content a:hover {
+  background-color: $main-bg;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 834px) {
+  .navbar-toggler {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .navbar {
+    .container {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 543px) {
+  .slidenav-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+  .slidenav-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 834px) {
+  .container {
+    width: auto;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .mobile-nav {
+    @include flex();
+    @include flex-direction(column);
+  }
+
+  .mobile-nav > * {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-toggler {
+    font-size: 2.4rem;
+  }
+
+  .navbar-toggler-right {
+    position: absolute;
+    right: 5px;
+  }
+
+  .nav-wrapper.expanded > .slidenav-container {
+    @include transform(translateX(-100%));
+  }
+
+  .slidenav-container {
+    position: fixed;
+    top: 0;
+    z-index: 1040;
+    left: 100%;
+    float: right;
+    overflow-y: scroll;
+    height: 100%;
+    @include transition(transform .3s ease-out);
+    background: $primary-dark;
+    @include box-shadow(inset 3px 0 6px -2px rgba(0, 0, 0, .26));
+    min-width: 25%;
+    .navbar-nav {
+      flex-direction: column !important;
+      @include flex-direction(column !important);
+      @include align-items(flex-start !important);
+      padding-left: .75rem;
+      padding-top: 4rem;
+    }
+  }
+
+  .slidenav-container > a {
+    position: absolute;
+    color: $white;
+    left: .75rem;
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 800px) {
+  .navbar-nav.mr-auto {
+    display: inline-flex !important;
+  }
+}
+

@@ -1,0 +1,37 @@
+@import "~sass/styles";
+
+.partner-box {
+  padding: 2rem 4rem;
+  .body-block-text {
+    padding-top: 1rem;
+    font-size: $font-18;
+  }
+}
+
+@media (max-width: 834px) {
+  .partner-box {
+    padding: 2rem 1rem;
+    .img-wrapper {
+      a {
+        .box-img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .partner-box {
+    text-align: center;
+    padding: 2rem;
+    .img-wrapper {
+      a {
+        .box-img {
+          margin: auto;
+          display: block;
+        }
+      }
+    }
+  }
+}

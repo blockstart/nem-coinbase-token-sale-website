@@ -1,0 +1,33 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+.container {
+  @include flex();
+  @include flex-direction(row-reverse);
+  .box {
+    h1 {
+      text-align: right;
+      font-weight: bolder;
+      font-size: $font-40;
+      margin-bottom: 1rem;
+    }
+    button.btn-main {
+      background-color: $secondary;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+ .container-4 {
+   .container {
+     margin: auto;
+     display: block;
+     .box {
+       text-align: center;
+       h1 {
+         text-align: center;
+       }
+     }
+   }
+ }
+}

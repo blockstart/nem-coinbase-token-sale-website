@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="105px" height="146px" viewBox="0 0 105 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>7.5mm-incubator-fund</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page--Milestones" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Milestones" transform="translate(-556.000000, -2611.000000)" fill-rule="nonzero">
+            <g id="7.5MMMM-Copy" transform="translate(518.000000, 2520.000000)">
+                <g id="7.5mm-incubator-fund" transform="translate(82.000000, 164.000000) rotate(-30.000000) translate(-82.000000, -164.000000) translate(36.000000, 80.500000)">
+                    <path d="M29,137.727273 C29,128.489636 36.387875,121 45.5,121 C54.612125,121 62,128.489636 62,137.727273 C62,146.964909 45.5,167 45.5,167 C45.5,167 29,146.964909 29,137.727273 Z" id="Shape" fill="#FF3D00"></path>
+                    <path d="M38,137.4 C38,132.7632 41.808,129 46.5,129 C51.192,129 55,132.7632 55,137.4 C55,142.0368 46.5,150 46.5,150 C46.5,150 38,142.0368 38,137.4 Z" id="Shape" fill="#FFEB3B"></path>
+                    <path d="M21,46.0708516 C21,58.5291946 21,125 21,125 L71,125 C71,125 71,58.5416571 71,46.0708516 C71,39.5031156 64.0666667,27.1943226 57.5,17 L34.5041667,17 C27.9375,27.1984768 21,39.5072698 21,46.0708516 Z" id="Shape" fill="#3D3B80"></path>
+                    <g id="Group" fill="#615FC1">
+                        <polygon id="Shape" points="92 124.6875 71.0909091 116.383313 71.0909091 66.5083125 92 95.59375"></polygon>
+                        <polygon id="Shape" points="0 124.6875 20.9090909 116.383313 20.9090909 66.5083125 0 95.59375"></polygon>
+                        <path d="M34.4623636,16.625 L57.5418182,16.625 C51.6203636,7.464625 46,0 46,0 C46,0 40.3796364,7.464625 34.4623636,16.625 Z" id="Shape"></path>
+                        <polygon id="Shape" points="71.0909091 124.6875 62.7272727 133 29.2727273 133 20.9090909 124.6875"></polygon>
+                    </g>
+                    <g id="Group" transform="translate(38.000000, 42.000000)" fill="#F1F3FA">
+                        <ellipse id="Oval" cx="8.5" cy="8.383375" rx="8.5" ry="8.375"></ellipse>
+                        <ellipse id="Oval" cx="8.5" cy="33.5" rx="8.5" ry="8.375"></ellipse>
+                        <ellipse id="Oval" cx="8.5" cy="58.625" rx="8.5" ry="8.375"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

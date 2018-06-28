@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="95px" viewBox="0 0 95 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>earn-your-way</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page--Products" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Products" transform="translate(-138.000000, -5930.000000)">
+            <g id="Group-14" transform="translate(138.000000, 5930.000000)">
+                <g id="Rank">
+                    <g id="earn-your-way">
+                        <circle id="Oval" fill="#3A80A0" cx="47.5" cy="47.5" r="47.5"></circle>
+                        <g id="icons8-sergeant_sgt" transform="translate(29.000000, 36.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <path d="M18.5,0.7 L18.1480978,0.875 L0.452445652,9.825 L0,10.05 L0,23.7 L18.5,14.5 L37,23.7 L37,10.05 L36.5475543,9.825 L18.8519022,0.875 L18.5,0.7 Z M18.5,2.5 L35.3913043,11.025 L35.3913043,13.1 L18.5,4.7 L1.60869565,13.1 L1.60869565,11.025 L18.5,2.5 Z M18.5,6.5 L35.3913043,14.9 L35.3913043,17.1 L18.5,8.7 L1.60869565,17.1 L1.60869565,14.9 L18.5,6.5 Z M18.5,10.5 L35.3913043,18.9 L35.3913043,21.1 L18.5,12.7 L1.60869565,21.1 L1.60869565,18.9 L18.5,10.5 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

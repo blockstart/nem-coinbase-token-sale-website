@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="95px" viewBox="0 0 95 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>marketplace-sdk</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="79.7932943%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#80F3E4" offset="0%"></stop>
+            <stop stop-color="#4A54E2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#80F3E4" offset="0%"></stop>
+            <stop stop-color="#4A54E2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-Page--Products" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Products" transform="translate(-143.000000, -2577.000000)">
+            <g id="Group-7" transform="translate(140.000000, 1908.000000)">
+                <g id="Group-6" transform="translate(3.000000, 133.000000)">
+                    <g id="Marketplace-" transform="translate(0.000000, 536.000000)">
+                        <g id="marketplace-sdk">
+                            <circle id="Oval" fill="#34317E" cx="47.5" cy="47.5" r="47.5"></circle>
+                            <g id="icons8-move_stock" transform="translate(23.000000, 38.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                                <path d="M0,0 L0,22 L22,22 L22,14.736328 L20,16.070312 L20,20 L2,20 L2,2 L20,2 L20,5.9296875 L22,7.2636719 L22,0 L0,0 Z M8,4 L8,6 L14,6 L14,4 L8,4 Z M18,7 L18,10 L10,10 L10,12 L18,12 L18,15 L24,11 L18,7 Z" id="Shape"></path>
+                            </g>
+                            <g id="icons8-coins" transform="translate(51.000000, 39.000000)" fill="url(#linearGradient-2)" fill-rule="nonzero">
+                                <path d="M14,0 C10.6875,0 8,1.121094 8,2.5 C8,3.878906 10.6875,5 14,5 C17.3125,5 20,3.878906 20,2.5 C20,1.121094 17.3125,0 14,0 Z M8,3.5 L8,5.5 C8,6.898438 10.699219,8 14,8 C17.300781,8 20,6.898438 20,5.5 L20,3.5 C20,4.898438 17.300781,6 14,6 C10.699219,6 8,4.898438 8,3.5 Z M20,6.40625 C20,7.90625 17.300781,9 14,9 C10.699219,9 8,7.898438 8,6.5 L8,8.09375 C10.398438,8.394531 12.507813,9.40625 12.90625,10.90625 L14,10.90625 C17.300781,10.90625 20,9.804688 20,8.40625 L20,6.40625 Z M6,9 C2.699219,9 0,10.101563 0,11.5 C0,12.898438 2.699219,14 6,14 C9.300781,14 12,12.898438 12,11.5 C12,10.101563 9.300781,9 6,9 Z M20,9.5 C20,10.898438 17.300781,12 14,12 L13,12 L13,14 L14,14 C17.300781,14 20,12.898438 20,11.5 L20,9.5 Z M0,12.5 L0,14.5 C0,15.898438 2.699219,17 6,17 C9.300781,17 12,15.898438 12,14.5 L12,12.5 C12,13.898438 9.300781,15 6,15 C2.699219,15 0,13.898438 0,12.5 Z M20,12.5 C20,13.898438 17.300781,15 14,15 L13,15 L13,17 L14,17 C17.300781,17 20,15.898438 20,14.5 L20,12.5 Z M0,15.5 L0,17.5 C0,18.898438 2.699219,20 6,20 C9.300781,20 12,18.898438 12,17.5 L12,15.5 C12,16.898438 9.300781,18 6,18 C2.699219,18 0,16.898438 0,15.5 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

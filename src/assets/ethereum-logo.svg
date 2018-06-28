@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="45px" viewBox="0 0 29 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ethereum-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page---Token-Sale" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cache-Homepage" transform="translate(-737.000000, -1042.000000)" fill-rule="nonzero">
+            <g id="Header">
+                <g id="Group-14" transform="translate(428.000000, 1042.000000)">
+                    <g id="Group-35" transform="translate(184.000000, 0.000000)">
+                        <g id="ethereum-logo" transform="translate(125.000000, 0.000000)">
+                            <polygon id="Shape" fill="#9FA8DA" points="0 22.5 14.3181818 0 28.6363636 22.5 14.3181818 30.6818182"></polygon>
+                            <polygon id="Shape" fill="#7986CB" points="14.3181818 0 28.6363636 22.5 14.3181818 30.6818182"></polygon>
+                            <polygon id="Shape" fill="#9FA8DA" points="0 25.5681818 14.3181818 33.75 28.6363636 25.5681818 14.3181818 45"></polygon>
+                            <polygon id="Shape" fill="#7986CB" points="14.3181818 33.75 28.6363636 25.5681818 14.3181818 45"></polygon>
+                            <polygon id="Shape" fill="#7986CB" points="0 22.5 14.3181818 16.3636364 28.6363636 22.5 14.3181818 30.6818182"></polygon>
+                            <polygon id="Shape" fill="#5C6BC0" points="14.3181818 16.3636364 28.6363636 22.5 14.3181818 30.6818182"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

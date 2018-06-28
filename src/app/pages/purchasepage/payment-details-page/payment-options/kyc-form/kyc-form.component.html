@@ -1,0 +1,11 @@
+<app-payment-option-info [infoHeader]="paymentInfo?.header" [infoBody1]="paymentInfo?.body1"
+                         [infoBody2]="paymentInfo?.body2"
+                         [btnText]="paymentInfo?.btnText"></app-payment-option-info>
+<div class="container container-4">
+  <app-compliance-form
+    [cacheAmount]="cacheAmount"
+    [recipientAddress]="recipientAddress"
+    (complianceFormSent)="onComplianceSent()">
+  </app-compliance-form>
+</div>
+
