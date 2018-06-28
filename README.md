@@ -12,6 +12,8 @@ The code will do the following:
  2. Let purchasers buy with XEM
  3. Let purchasers buy through Coinbase Commerce
  4. Process KYC for XEM and manual crypto payments
+ 
+ This front-end is built with Angular.
 
 
 ## Getting Started
